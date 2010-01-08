@@ -1,0 +1,8 @@
+# Auto-written by gtk2_prefs. Do not edit.
+
+gtk-theme-name = "MurrinaBlu"
+style "user-font"
+{
+	font_name="Tahoma 9"
+}
+widget_class "*" style "user-font"
