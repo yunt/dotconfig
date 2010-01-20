@@ -210,13 +210,14 @@ alias ls='ls -F --color=auto'
 alias ll='ls -l'
 alias grep='grep --color=auto'
 alias ee='emacsclient -t'
-alias wine='env LANG=zh_CN.UTF-8 wine'
+#alias wine='env LANG=zh_CN.UTF-8 wine'
 alias ntp='sudo ntpdate pool.ntp.org && sudo hwclock --systohc'
 alias gae='/opt/google-appengine/appcfg.py'
 alias gaetest='/opt/google-appengine/dev_appserver.py'
 alias winxp-snap='VBoxManage snapshot winxp restore xp-snap'
-alias winxp='VBoxManage startvm winxp --type sdl'
+alias winxp='VBoxSDL --startvm winxp --nofstoggle --noresize --evdevkeymap'
 alias vless='vim -u /usr/share/vim/vim72/macros/less.vim'
+alias emacs='env LC_CTYPE=zh_CN.UTF-8 emacs'
 
 #[Esc][h] man 当前命令时，显示简短说明 
 alias run-help >&/dev/null && unalias run-help
