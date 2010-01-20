@@ -1,117 +1,54 @@
-;;Fonts
-;(create-fontset-from-fontset-spec
-;   "-*-monaco-medium-R-normal--12-*-*-*-*-*-fontset-mymono,
-;   chinese-gb2312:-*-yahei mono-medium-*-normal--14-*-*-*-*-*-iso10646-1,
-;    chinese-gbk:-*-yahei mono-medium-*-normal--14-*-*-*-*-*-iso10646-1,
-;     chinese-gb18030:-*-yahei mono-medium-*-normal--14-*-*-*-*-*-iso10646-1"
-;     )
-;(setq default-frame-alist (append '((font . "fontset-mymono")) default-frame-alist))
-;(set-default-font "fontset-mymono")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Yunt's dotemacs file
+;;; Last modified time
+;;; Time-stamp: <yunt 01/17/2010 04:46:49>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;以上是我得time stamp，在后面将有详细讲解
+(defconst my-emacs-path           "~/.emacs.d/" "我的emacs相关配置文件的路径")
+(defvar mswin  (equal window-system 'w32)  "Non-nil means windows system.")
+(defvar cygwin (equal system-type 'cygwin) "Non-nil means cygwin system.")
+(defconst is-before-emacs-21 (>= 21 emacs-major-version) "是否是emacs 21或以前的版本")
+(defconst is-after-emacs-23  (<= 23 emacs-major-version) "是否是emacs 23或以后的版本")
+;;设置你的全名和邮件，在发邮件时可以用到
+(setq user-full-name "Yunt")
+(setq user-mail-address "shangyunt@gmail.com")
+;;设置你的书签文件，默认是~/.emacs.bmk，我喜欢把有关emacs的文件尽量放在一个文件夹，所以就修改了。
+(setq bookmark-default-file "~/.emacs.d/.emacs.bmk")
+;;设置缩略词的文件
+(setq abbrev-file-name "~/.emacs.d/.abbrev_defs")
+;;load-path就同bash中的$PATH相似，emacs所需要的Elisp包都得在load-path里的文件夹中
+(setq load-path (cons "~/.emacs.d/elisp" load-path))
+(setq load-path (cons "~/.emacs.d/site-lisp" load-path))
+;;设置info的路径，也可通过Shell的全局变量$INFOPATH设置，我原来的22因为是自己编译的所以这里就注释了
+;(add-to-list 'Info-default-directory-list "~/local/info/")
+;;由菜单修改配置的东西将会保存在custom-file里，这里我设置他在我的elisp的集中营里
+;(setq custom-file "~/.emacs.d/elisp/yunt-custom.el")
+;;设置gnus启动的文件。默认是为~/.gnus.el
+(setq gnus-init-file "~/.emacs.d/elisp/yunt-gnus.el")
+;;由于我的配置文件很长，所以按照分类分别放在不同的文件里，方便管理
+(load "yunt-function")
+(load "yunt-basic")
+(load "yunt-viper")
+;(load "yunt-calendar")
+(load "yunt-folding")
+(load "yunt-ibuffer")
+(load "yunt-ido")
+;(load "yunt-dictionary")
+;(load "yunt-mew")
+;(load "yunt-w3m")
+(load "yunt-cedet")
+;(load "yunt-org")
+(load "yunt-dired")
+;(load "yunt-mode")
+;(load "yunt-wiki")
+(load "yunt-other-elisp")
+(load "yunt-language")
+(load "yunt-programe")
+(load "yunt-key-bindings")
 
-;;; 显示时间
-(setq display-time-24hr-format t)
-(setq display-time-day-and-date t)
-(display-time)
-;;;; 关闭启动画面
-(setq inhibit-startup-message t)
-;;;;设置大的kill ring
-(setq kill-ring-max 150)
-(tool-bar-mode nil);去掉那个大大的工具栏
-(scroll-bar-mode nil);去掉滚动条，因为可以使用鼠标滚轮了 ^_^
-(setq x-select-enable-clipboard t);支持emacs和外部程序的粘贴
-(font-lock-mode t) ; 开启语法高亮
-(setq default-tab-width 4)
-
-;; Themes
-(require 'color-theme)
-(color-theme-initialize)
-;;(color-theme-robin-hood)
-(color-theme-dark-laptop)
-
-;; Shell
-
-;;vim pulse vim in emacs 真邪恶:) ctrl+z 进行emacs vim之间的切换
-(setq viper-mode t)                ; enable Viper at load time
-(setq viper-ex-style-editing nil)  ; can backspace past start of insert / line
-(require 'viper)                   ; load Viper
-(add-to-list 'load-path "~/.emacs.d/plugins/vim")
-(require 'vimpulse)                ; load Vimpulse
-(setq woman-use-own-frame nil)     ; don't create new frame for manpages
-(setq woman-use-topic-at-point t)  ; don't prompt upon K key (manpage display)
-;;ctrl + r -> redo
-(require 'redo)
-;;nice rectangle
-(require 'rect-mark)
-
-
-;; Python
-(autoload 'python-mode "python-mode.el" "Python mode." t)
-(setq auto-mode-alist (append '(("/*.\.py$" . python-mode)) auto-mode-alist))
-
-
-;; C/C++
-;;;; Load CEDET
-(load-file "/usr/share/emacs/site-lisp/cedet/common/cedet.el")
-(semantic-load-enable-code-helpers)
-;;speedbar key binding  
-(global-set-key [(f2)] 'speedbar-get-focus)  
-;;alt+/ 自动补全  
-;(define-key c-mode-base-map [(meta ?/)] 'semantic-ia-complete-symbol-menu)
-
-(add-to-list 'load-path "/usr/share/emacs/site-lisp/ecb")
-(require 'ecb)
-;(require 'ecb-autoloads)
-(custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(ecb-options-version "2.40"))
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- )
-
-;; IBuffer
-(global-set-key (kbd "C-x C-b") 'ibuffer)
- (require 'ibuf-ext)
-  (setq ibuffer-mode-hook
-        (lambda ()
-          (setq ibuffer-filter-groups
-                '(
-                  ("*buffer*" (name . "\\*.*\\*"))
-                  ("dired" (mode . dired-mode))
-                  ("perl" (or (mode . cperl-mode)
-                              (mode . sepia-mode)
-                              (mode . perl-mode)))
-                  ("elisp" (or (mode . emacs-lisp-mode)
-                               (mode . lisp-interaction-mode)))
-                  ("prog" (or (mode . c++-mode)
-                              (mode . c-mode)
-                              (mode . java-mode)))
-                  ("tags" (name . "^TAGS"))))))
-
-(define-ibuffer-sorter file-name
-  "Sort buffers by associated file name"
-  (:description "file name")
-  (apply 'string<
-         (mapcar (lambda (buf)
-                   (with-current-buffer (car buf)
-                     (or buffer-file-name default-directory)))
-                 (list a b))))
-(define-key ibuffer-mode-map "sf" 'ibuffer-do-sort-by-file-name)
-
-(defun ywb-ibuffer-rename-buffer ()
-    (interactive)
-    (call-interactively 'ibuffer-update)
-    (let* ((buf (ibuffer-current-buffer))
-           (name (generate-new-buffer-name
-                  (read-from-minibuffer "Rename buffer(to new name): "
-                                        (buffer-name buf)))))
-      (with-current-buffer buf
-        (rename-buffer name)))
-    (call-interactively 'ibuffer-update))
-  (define-key ibuffer-mode-map "r" 'ywb-ibuffer-rename-buffer)
-
+;;这个东西必须放在最后
+;;desktop.el是一个可以保存你上次emacs关闭时的状态，下一次启动时恢复为上次关闭的状态。就和vmware的suspend一样。
+;;因为我要使用sawfish-mode,wiki-mode,html-helper-mode，放在这里才能保证下次启动时能正确辨认文件需要的模式。
+(load "desktop")
+(desktop-save-mode)
+;;(desktop-read)
