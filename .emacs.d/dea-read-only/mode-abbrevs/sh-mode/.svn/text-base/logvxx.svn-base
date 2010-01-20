@@ -1,0 +1,1 @@
+logv <field "content"> <field "logFile"> <choose><choice ""info""><choice ""warn""><choice ""err""></choose> <field "verbose">

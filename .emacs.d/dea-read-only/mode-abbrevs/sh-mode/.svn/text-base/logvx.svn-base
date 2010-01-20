@@ -1,0 +1,9 @@
+# 根据isVerbose来log
+# $1: 日志内容
+# $2: 日志文件名
+# $3: 日志类型 1 or info - info, 2 or warn - warnning, 3 or err - error, 缺省为info
+# $4: 是否记录日志,缺省记录
+function logv()
+{
+    print "$1" "$3" 0 "$2" "$4"
+}

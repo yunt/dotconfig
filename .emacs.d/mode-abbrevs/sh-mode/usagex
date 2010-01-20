@@ -1,0 +1,22 @@
+usage()
+{
+    code=1
+    if [ $# -gt 0 ]; then
+        code="$1"
+    fi
+
+    if [ "$code" != 0 ]; then
+        redirect="1>&2"
+    fi
+
+    eval cat "$redirect" << EOF
+usage: ${PROGRAM_NAME} [OPTIONS]
+
+Options:
+	-i	Install this shell script to your machine.
+    -v  Output version info.
+    -h  Output this help.
+EOF
+    
+    exit "$code"
+}

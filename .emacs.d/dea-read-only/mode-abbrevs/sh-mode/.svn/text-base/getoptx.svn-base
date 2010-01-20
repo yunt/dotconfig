@@ -1,0 +1,21 @@
+while getopts <field ":hv"> OPT; do
+    case "$OPT" in
+        v)
+            version
+            ;;
+
+        h)
+            usage
+            ;;
+
+        :)
+            echo -e "Option \`-${OPTARG}' need argument."
+            usage
+            ;;
+
+        ?)
+            echo -e "Invalid option \`-${OPTARG}'."
+            usage
+            ;;
+    esac
+done

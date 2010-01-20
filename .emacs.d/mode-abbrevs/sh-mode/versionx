@@ -1,0 +1,5 @@
+version()
+{
+    echo "${PROGRAM_NAME} ${PROGRAM_VERSION}"
+    exit
+}

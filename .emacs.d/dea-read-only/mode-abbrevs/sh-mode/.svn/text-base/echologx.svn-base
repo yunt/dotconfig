@@ -1,0 +1,8 @@
+# 输出到屏幕的同时输出到日志文件
+# $1: 日志内容
+# $2: 日志文件名
+# $3: 日志类型 1 or info - info, 2 or warn - warnning, 3 or err - error, 缺省为info
+function echoLog()
+{
+    print "$1" "$3" 1 "$2"
+}

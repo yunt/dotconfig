@@ -1,0 +1,5 @@
+# echo to stderr
+echoe()
+{
+    printf "$*\n" 1>&2
+}

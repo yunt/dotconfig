@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/664/trunk/lisps/cedet/quickpeek
+END
+qp-c.el
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/664/trunk/lisps/cedet/quickpeek/qp-c.el
+END
+quickpeek.el
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/664/trunk/lisps/cedet/quickpeek/quickpeek.el
+END
+Project.ede
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/664/trunk/lisps/cedet/quickpeek/Project.ede
+END
+qp-base.el
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/664/trunk/lisps/cedet/quickpeek/qp-base.el
+END
+qp-elisp.el
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/664/trunk/lisps/cedet/quickpeek/qp-elisp.el
+END
+qp-util.el
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/664/trunk/lisps/cedet/quickpeek/qp-util.el
+END

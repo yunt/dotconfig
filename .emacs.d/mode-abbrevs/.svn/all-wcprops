@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/812/trunk/mode-abbrevs
+END
+TeX-mode.aliases.LaTeX-mode
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/28/trunk/mode-abbrevs/TeX-mode.aliases.LaTeX-mode
+END
+inferior-python-mode.aliases.python-mode
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/28/trunk/mode-abbrevs/inferior-python-mode.aliases.python-mode
+END
+jde-mode.aliases.java-mode
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/28/trunk/mode-abbrevs/jde-mode.aliases.java-mode
+END
+cperl-mode.aliases.perl-mode
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/28/trunk/mode-abbrevs/cperl-mode.aliases.perl-mode
+END
+c++-mode.aliases.c-mode
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/28/trunk/mode-abbrevs/c++-mode.aliases.c-mode
+END
+.emacs-dirvars
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/.emacs-dirvars
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 23
+/svn/!svn/ver/823/trunk
+END
+install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/293/trunk/install.sh
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/822/trunk/TODO
+END
+install.emacs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/293/trunk/install.emacs.sh
+END
+undefine-keys
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/184/trunk/undefine-keys
+END
+.emacs
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/815/trunk/.emacs
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/780/trunk/ChangeLog
+END
+update.sh
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/499/trunk/update.sh
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/275/trunk/README
+END

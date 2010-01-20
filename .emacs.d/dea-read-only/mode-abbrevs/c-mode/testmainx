@@ -1,0 +1,65 @@
+// Time-stamp: <02/20/2008 11:33:07 ÐÇÆÚÈý by ahei>
+
+#include <stdexcept>
+#include <fstream>
+
+#include <cppunit/CompilerOutputter.h>
+#include <cppunit/TestResult.h>
+#include <cppunit/TestResultCollector.h>
+#include <cppunit/TestRunner.h>
+#include <cppunit/TextTestProgressListener.h>
+#include <cppunit/BriefTestProgressListener.h>
+#include <cppunit/XmlOutputter.h>
+#include <cppunit/extensions/TestFactoryRegistry.h>
+#include <cppunit/extensions/RepeatedTest.h>
+
+int main(int argc, char * argv[])
+{
+    std::string testPath = std::string(argc > 1 ? argv[1] : "");
+    const int DEFAULT_NUM = 1;
+    int repeatNum = DEFAULT_NUM;;
+
+    if (argc > 2)
+    {
+        repeatNum = atoi(argv[2]);
+    }
+    if (repeatNum < 0)
+    {
+        repeatNum = DEFAULT_NUM;
+    }
+
+    CPPUNIT_NS::TestResult controller;
+    CPPUNIT_NS::TestResultCollector result;
+    CPPUNIT_NS::BriefTestProgressListener progress;
+    CPPUNIT_NS::TestRunner runner;
+
+    controller.addListener(&result);
+    controller.addListener(&progress);
+
+    runner.addTest(new CPPUNIT_NS::RepeatedTest(CPPUNIT_NS::TestFactoryRegistry::getRegistry().makeTest(), repeatNum));
+
+    try
+    {
+        std::cout << "Running " << testPath
+                  << "RunNum " << repeatNum
+                  << std::endl;
+
+        runner.run(controller, testPath);
+
+        std::cout << std::endl;
+
+        CPPUNIT_NS::CompilerOutputter outputter(&result, std::cerr);
+
+        outputter.write();
+    }
+    catch (std::invalid_argument& e)
+    {
+        std::cerr << std::endl
+                  << "ERROR: " << e.what()
+                  << std::endl;
+
+        return EXIT_FAILURE;
+    }
+
+    return result.wasSuccessful() ? EXIT_SUCESS : EXIT_FAILURE;
+}

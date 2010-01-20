@@ -1,0 +1,567 @@
+;; Object elisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "elisp/"
+  :tables (list 
+   (semanticdb-table "yunt-programe.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("dolist" code nil nil [39 606])
+            ("font-lock-add-keywords" code nil nil [607 688])
+            ("yasnippet" include nil nil [690 710])
+            ("setq" code nil nil [712 771])
+            ("yas/load-directory" code nil nil [772 811])
+            ("setq" code nil nil [812 838])
+            ("yas/global-mode" code nil nil [839 858])
+            ("define-key" code nil nil [860 927])
+            ("define-key" code nil nil [928 979])
+            ("sh-script" include nil nil [988 1008])
+            ("sh-mode-map-key-pairs" variable
+               (:user-visible-flag t
+                :default-value (\` (("<" self-insert-command) ("C-c M-c" sh-case) ("C-c C-c" comment) ("C-c g" bashdb))))
+                nil [1010 1170])
+            ("apply-map-define-keys" code nil nil [1172 1208])
+            ("font-lock-add-keywords" code nil nil [1210 1299])
+            ("setq-default" code nil nil [1309 1337])
+            ("setq" code nil nil [1338 1361])
+            ("load" code nil nil [1375 1403])
+            ("my-c-mode-cedet-hook" function nil nil [1451 1944])
+            ("add-hook" code nil nil [1945 1997]))          
+    :file "yunt-programe.el"
+    :pointmax 2030
+    :fsize 2105
+    :lastmodtime '(19283 21177)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-viper.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("setq" code nil nil [79 98])
+            ("viper" include nil nil [142 158])
+            ("setq-default" code nil nil [190 778])
+            ("define-key" code nil nil [780 838])
+            ("define-key" code nil nil [839 898])
+            ("define-key" code nil nil [899 956])
+            ("define-key" code nil nil [957 1012])
+            ("define-key" code nil nil [1013 1063])
+            ("define-key" code nil nil [1064 1169])
+            ("setq" code nil nil [1224 1291])
+            ("add-to-list" code nil nil [1293 1340])
+            ("vimpulse" include nil nil [1341 1360])
+            ("setq" code nil nil [1361 1391])
+            ("setq" code nil nil [1434 1467])
+            ("redo" include nil nil [1468 1483])
+            ("rect-mark" include nil nil [1484 1504])
+            ("yunt-viper" package nil nil [1506 1527]))          
+    :file "yunt-viper.el"
+    :pointmax 1557
+    :fsize 1576
+    :lastmodtime '(19282 1876)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-folding.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("folding-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [168 251])
+            ("load-library" code nil nil [252 277])
+            ("folding-mode-find-file-hook" function nil nil [278 520])
+            ("setq" code nil nil [521 550])
+            ("folding-mode-add-find-file-hook" code nil nil [551 584])
+            ("setq" code nil nil [1010 1044])
+            ("add-hook" code nil nil [1045 1930])
+            ("folding-add-to-marks-list" code nil nil [1953 2039])
+            ("folding-add-to-marks-list" code nil nil [2040 2097])
+            ("folding-add-to-marks-list" code nil nil [2098 2159])
+            ("folding-add-to-marks-list" code nil nil [2160 2223])
+            ("folding-add-to-marks-list" code nil nil [2224 2289])
+            ("folding-add-to-marks-list" code nil nil [2290 2355])
+            ("folding-add-to-marks-list" code nil nil [2356 2420])
+            ("folding-add-to-marks-list" code nil nil [2421 2478])
+            ("folding-add-to-marks-list" code nil nil [2479 2542])
+            ("folding-add-to-marks-list" code nil nil [2543 2600])
+            ("folding-add-to-marks-list" code nil nil [2601 2667])
+            ("folding-add-to-marks-list" code nil nil [2668 2735])
+            ("folding-add-to-marks-list" code nil nil [2736 2802])
+            ("folding-add-to-marks-list" code nil nil [2803 2860])
+            ("yunt-foldinging" package nil nil [2862 2888]))          
+    :file "yunt-folding.el"
+    :pointmax 2920
+    :fsize 3235
+    :lastmodtime '(19274 2865)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "init-gnus.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("gnus-notify+" include nil nil [51 74])
+            ("gnus-agentize" code nil nil [84 99])
+            ("setq" code nil nil [153 190])
+            ("setq" code nil nil [215 242])
+            ("setq" code nil nil [282 307])
+            ("setq" code nil nil [341 367])
+            ("setq" code nil nil [401 433])
+            ("setq" code nil nil [466 498])
+            ("setq" code nil nil [527 567])
+            ("setq" code nil nil [588 614])
+            ("setq" code nil nil [646 677])
+            ("setq" code nil nil [716 757])
+            ("setq" code nil nil [791 830])
+            ("setq" code nil nil [856 891])
+            ("setq" code nil nil [922 951])
+            ("setq" code nil nil [992 1028])
+            ("setq" code nil nil [1061 1094])
+            ("setq" code nil nil [1128 1179])
+            ("setq" code nil nil [1186 1213])
+            ("setq" code nil nil [1257 1292])
+            ("gnus-add-configuration" code nil nil [1329 1443])
+            ("setq" code nil nil [1452 1485])
+            ("setq" code nil nil [1523 1554])
+            ("auto-image-file-mode" code nil nil [1585 1607])
+            ("add-to-list" code nil nil [1647 1700])
+            ("setq" code nil nil [1719 1766])
+            ("setq" code nil nil [1778 1894])
+            ("gnus-user-format-function-a" function (:arguments ("header")) nil [1895 2300])
+            ("setq" code nil nil [2301 2602])
+            ("setq" code nil nil [2638 2673])
+            ("setq" code nil nil [2674 2715])
+            ("setq" code nil nil [2716 2762])
+            ("setq" code nil nil [2763 2800])
+            ("setq" code nil nil [2801 2843])
+            ("setq" code nil nil [2844 2884])
+            ("setq" code nil nil [2885 2935])
+            ("setq" code nil nil [2936 2982])
+            ("add-hook" code nil nil [2991 3053])
+            ("add-hook" code nil nil [3071 3131])
+            ("add-hook" code nil nil [3143 3192])
+            ("setq" code nil nil [3228 3653])
+            ("setq" code nil nil [3681 4066])
+            ("setq" code nil nil [4075 4492])
+            ("setq" code nil nil [4499 4659])
+            ("add-hook" code nil nil [4713 4781])
+            ("add-hook" code nil nil [4791 4856])
+            ("add-hook" code nil nil [4883 4931])
+            ("add-hook" code nil nil [4953 5008])
+            ("add-hook" code nil nil [5018 5064])
+            ("setq" code nil nil [5088 5227])
+            ("gnus-compile" code nil nil [5236 5250])
+            ("init-gnus" package nil nil [5291 5311]))          
+    :file "init-gnus.el"
+    :pointmax 5340
+    :fsize 6454
+    :lastmodtime '(19286 4991)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-basic.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("setq" code nil nil [24 80])
+            ("color-theme" include nil nil [274 296])
+            ("color-theme-initialize" code nil nil [401 425])
+            ("color-theme-comidia" code nil nil [451 472])
+            ("ahei-face" include nil nil [730 750])
+            ("set-default-font" code nil nil [866 916])
+            ("set-fontset-font" code nil nil [962 1065])
+            ("tool-bar-mode" code nil nil [1082 1101])
+            ("menu-bar-mode" code nil nil [1155 1174])
+            ("scroll-bar-mode" code nil nil [1202 1223])
+            ("setq-default" code nil nil [1247 1276])
+            ("setq" code nil nil [1459 1483])
+            ("setq" code nil nil [1519 1545])
+            ("setq" code nil nil [1563 1590])
+            ("setq" code nil nil [1609 1637])
+            ("setq" code nil nil [1650 1710])
+            ("setq" code nil nil [1725 1751])
+            ("setq" code nil nil [1752 1777])
+            ("my-indent-or-complete" function nil nil [2146 2288])
+            ("global-set-key" code nil nil [2289 2344])
+            ("senator-try-expand-semantic" function (:prototype-flag t) nil [2345 2394])
+            ("global-set-key" code nil nil [2395 2438])
+            ("setq" code nil nil [2439 3032])
+            ("setq" code nil nil [3118 3144])
+            ("setq" code nil nil [3164 3197])
+            ("setq" code nil nil [3231 3291])
+            ("add-hook" code nil nil [3313 3353])
+            ("display-time-mode" code nil nil [3394 3415])
+            ("setq" code nil nil [3428 3461])
+            ("setq" code nil nil [3478 3512])
+            ("setq" code nil nil [3527 3562])
+            ("setq" code nil nil [3573 3604])
+            ("setq" code nil nil [3615 3659])
+            ("setq" code nil nil [3697 3733])
+            ("minibuffer-electric-default-mode" code nil nil [3758 3794])
+            ("partial-completion-mode" code nil nil [3846 3873])
+            ("icomplete-mode" code nil nil [3900 3918])
+            ("fset" code nil nil [3957 3986])
+            ("setq" code nil nil [4014 4042])
+            ("setq" code nil nil [4078 4120])
+            ("setq" code nil nil [4148 4179])
+            ("mouse-avoidance-mode" code nil nil [4230 4261])
+            ("auto-image-file-mode" code nil nil [4281 4305])
+            ("auto-compression-mode" code nil nil [4317 4342])
+            ("column-number-mode" code nil nil [4368 4390])
+            ("line-number-mode" code nil nil [4391 4411])
+            ("cl" include nil nil [4604 4617])
+            ("setq-default" code nil nil [4636 4671])
+            ("setq" code nil nil [4672 4698])
+            ("setq" code nil nil [4699 4723])
+            ("loop" code nil nil [4724 4820])
+            ("blink-cursor-mode" code nil nil [4981 5003])
+            ("transient-mark-mode" code nil nil [5004 5027])
+            ("show-paren-mode" code nil nil [5054 5073])
+            ("mouse-wheel-mode" code nil nil [5083 5103])
+            ("setq" code nil nil [5118 5151])
+            ("setq" code nil nil [5209 5277])
+            ("setq" code nil nil [5297 5375])
+            ("setq" code nil nil [5376 5412])
+            ("setq" code nil nil [5436 5468])
+            ("setq" code nil nil [5469 5506])
+            ("setq" code nil nil [5527 5560])
+            ("setq" code nil nil [5594 5624])
+            ("setq" code nil nil [5625 5643])
+            ("setq-default" code nil nil [5665 5697])
+            ("setq" code nil nil [5724 5748])
+            ("setq" code nil nil [5768 5791])
+            ("setq-default" code nil nil [5844 5887])
+            ("setq" code nil nil [5969 6014])
+            ("setq" code nil nil [6035 6069])
+            ("setq" code nil nil [6091 6128])
+            ("server-start" code nil nil [6183 6197])
+            ("put" code nil nil [6214 6250])
+            ("put" code nil nil [6270 6307])
+            ("put" code nil nil [6318 6353])
+            ("put" code nil nil [6364 6400])
+            ("put" code nil nil [6412 6446])
+            ("put" code nil nil [6447 6483])
+            ("put" code nil nil [6485 6528])
+            ("put" code nil nil [6556 6588])
+            ("setq" code nil nil [6611 6648])
+            ("setq" code nil nil [6720 6747])
+            ("setq" code nil nil [6766 6805])
+            ("global-auto-revert-mode" code nil nil [6877 6904])
+            ("setq" code nil nil [6927 6963])
+            ("setq" code nil nil [7068 7100])
+            ("list-processes+" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [7101 7170])
+            ("cn-weather" include nil nil [7178 7199])
+            ("setq" code nil nil [7200 7227])
+            ("command-frequence" include nil nil [7240 7268])
+            ("load" code nil nil [7277 7306])
+            ("yunt-basic" package nil nil [7336 7357]))          
+    :file "yunt-basic.el"
+    :pointmax 7387
+    :fsize 10648
+    :lastmodtime '(19286 8072)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-key-bindings.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("global-set-key" code nil nil [46 99])
+            ("global-set-key" code nil nil [100 153])
+            ("global-set-key" code nil nil [179 227])
+            ("global-set-key" code nil nil [229 272])
+            ("global-set-key" code nil nil [273 313])
+            ("global-set-key" code nil nil [314 354])
+            ("global-set-key" code nil nil [356 398])
+            ("global-set-key" code nil nil [399 439])
+            ("global-set-key" code nil nil [440 473])
+            ("global-set-key" code nil nil [512 571])
+            ("yunt-key-bindings.el" package nil nil [573 604]))          
+    :file "yunt-key-bindings.el"
+    :pointmax 639
+    :fsize 720
+    :lastmodtime '(19286 8022)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-function.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("apply-define-key" function (:arguments ("map" "key-pairs")) nil [233 395])
+            ("apply-map-define-keys" function (:arguments ("map-symbol")) nil [397 559])
+            ("concat-name" function (:arguments ("strings")) nil [561 631])
+            ("apply-args-to-fun" function (:arguments ("fun" "args")) nil [633 772])
+            ("apply-args-list-to-fun" function (:arguments ("fun-list" "args-list")) nil [774 1119])
+            ("count-brf-lines" function
+               (:user-visible-flag t
+                :arguments ("is-fun"))
+                nil [1121 2248])
+            ("global-set-key" code nil nil [2249 2296])
+            ("global-set-key" code nil nil [2297 2374])
+            ("dos-unix" function nil nil [2407 2523])
+            ("unix-dos" function nil nil [2524 2644])
+            ("global-set-key" code nil nil [2646 2679])
+            ("match-paren" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [2680 2953])
+            ("global-set-key" code nil nil [2955 3010])
+            ("global-set-key" code nil nil [3011 3065])
+            ("ska-point-to-register" function (:user-visible-flag t) nil [3066 3278])
+            ("ska-jump-to-register" function (:user-visible-flag t) nil [3280 3546])
+            ("wy-go-to-char" function
+               (:user-visible-flag t
+                :arguments ("n" "char"))
+                nil [3548 3931])
+            ("define-key" code nil nil [3933 3985])
+            ("global-set-key" code nil nil [4081 4126])
+            ("kid-star-dict" function nil nil [4127 4730])
+            ("my-fullscreen" function nil nil [4736 4873])
+            ("yunt-function" package nil nil [4875 4899]))          
+    :file "yunt-function.el"
+    :pointmax 4932
+    :fsize 5201
+    :lastmodtime '(19286 7889)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-language.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("set-language-environment" code nil nil [37 70])
+            ("set-keyboard-coding-system" code nil nil [74 109])
+            ("set-terminal-coding-system" code nil nil [118 153])
+            ("set-buffer-file-coding-system" code nil nil [169 207])
+            ("set-selection-coding-system" code nil nil [211 247])
+            ("set-clipboard-coding-system" code nil nil [248 284])
+            ("set-file-name-coding-system" code nil nil [300 336])
+            ("modify-coding-system-alist" code nil nil [340 388])
+            ("setq" code nil nil [389 442])
+            ("setq-default" code nil nil [443 487])
+            ("setq" code nil nil [945 1379])
+            ("unicad" include nil nil [1381 1398])
+            ("yunt-language" package nil nil [1411 1435]))          
+    :file "yunt-language.el"
+    :pointmax 1468
+    :fsize 1589
+    :lastmodtime '(19275 50323)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-cedet.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("setq" code nil nil [67 120])
+            ("load-file" code nil nil [152 214])
+            ("add-to-list" code nil nil [223 307])
+            ("add-to-list" code nil nil [319 406])
+            ("cc-mode" include nil nil [468 486])
+            ("semantic-load-enable-excessive-code-helpers" code nil nil [488 533])
+            ("global-ede-mode" code nil nil [534 553])
+            ("semantic-ia" include nil nil [554 576])
+            ("semantic-gcc" include nil nil [577 600])
+            ("global-srecode-minor-mode" code nil nil [601 630])
+            ("dolist" code nil nil [1030 1256])
+            ("if" code nil nil [1281 1408])
+            ("dolist" code nil nil [1409 1583])
+            ("setq" code nil nil [1952 2022])
+            ("setq" code nil nil [2045 2134])
+            ("eval-after-load" code nil nil [2136 2262])
+            ("add-to-list" code nil nil [2290 2355])
+            ("ecb-autoloads" include nil nil [2363 2387])
+            ("ecb" function (:user-visible-flag t) nil [2388 2475])
+            ("yunt-cedet" package nil nil [2477 2498]))          
+    :file "yunt-cedet.el"
+    :pointmax 2528
+    :fsize 2670
+    :lastmodtime '(19285 48762)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-ido.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("ido" include nil nil [48 62])
+            ("ido-mode" code nil nil [73 85])
+            ("add-hook" code nil nil [86 137])
+            ("ido-yunt-keys" function nil nil [138 3185])
+            ("yunt-ido" package nil nil [3187 3206]))          
+    :file "yunt-ido.el"
+    :pointmax 3234
+    :fsize 3481
+    :lastmodtime '(19274 2706)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-ibuffer.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("global-set-key" code nil nil [48 89])
+            ("ibuf-ext" include nil nil [91 110])
+            ("setq" code nil nil [113 775])
+            ("define-ibuffer-sorter" code nil nil [777 1072])
+            ("define-key" code nil nil [1073 1137])
+            ("ywb-ibuffer-rename-buffer" function nil nil [1139 1555])
+            ("define-key" code nil nil [1558 1618])
+            ("yunt-ibuffer" package nil nil [1620 1643]))          
+    :file "yunt-ibuffer.el"
+    :pointmax 1675
+    :fsize 1680
+    :lastmodtime '(19274 3003)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-gnus.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("setq" code nil nil [285 374])
+            ("eval-after-load" code nil nil [382 534])
+            ("setq" code nil nil [553 602])
+            ("setq" code nil nil [746 827])
+            ("load-library" code nil nil [837 860])
+            ("nnir" include nil nil [861 876])
+            ("add-to-list" code nil nil [891 1194])
+            ("setq" code nil nil [1211 1239])
+            ("setq" code nil nil [1240 1631])
+            ("smtpmail" include nil nil [1632 1651])
+            ("init-gnus" include nil nil [1653 1673])
+            ("define-key" code nil nil [1686 1764]))          
+    :file "yunt-gnus.el"
+    :pointmax 1765
+    :fsize 1828
+    :lastmodtime '(19284 38607)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-other-elisp.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("twit-show-recent-tweets" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [83 130])
+            ("twit-show-at-tweets" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [163 207])
+            ("twit-show-friends" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [226 269])
+            ("twit-show-followers" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [285 330])
+            ("twit-follow-recent-tweets" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [349 398])
+            ("twit-post" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [431 466])
+            ("twit-post-region" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [467 508])
+            ("twit-post-buffer" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [509 550])
+            ("twit-direct" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [551 588])
+            ("twit-add-favorite" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [608 650])
+            ("twit-remove-favorite" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [680 725])
+            ("twit-add-friend" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [727 769])
+            ("twit-remove-friend" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [788 832])
+            ("twit-switch-account" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [928 973])
+            ("twit-direct-with-account" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [974 1024])
+            ("twit-post-with-account" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [1025 1072])
+            ("twit-show-direct-tweets-with-account" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [1074 1134])
+            ("twit-show-at-tweets-with-account" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [1135 1192])
+            ("setq" code nil nil [1194 1224])
+            ("setq" code nil nil [1235 1279])
+            ("global-set-key" code nil nil [1292 1347])
+            ("global-set-key" code nil nil [1348 1389])
+            ("yunt-yunt-other-elisp" package nil nil [1391 1423]))          
+    :file "yunt-other-elisp.el"
+    :pointmax 1459
+    :fsize 1625
+    :lastmodtime '(19286 3443)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table ".emacs"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("setq" code nil nil [264 292])
+            ("setq" code nil nil [293 339])
+            ("setq" code nil nil [399 451])
+            ("setq" code nil nil [463 512])
+            ("setq" code nil nil [574 626])
+            ("setq" code nil nil [881 934])
+            ("load" code nil nil [970 989])
+            ("load" code nil nil [990 1009])
+            ("load" code nil nil [1010 1032])
+            ("load" code nil nil [1057 1078])
+            ("load" code nil nil [1079 1100])
+            ("load" code nil nil [1101 1118])
+            ("load" code nil nil [1145 1167])
+            ("load" code nil nil [1206 1225])
+            ("load" code nil nil [1306 1331])
+            ("load" code nil nil [1520 1536])
+            ("desktop-save-mode" code nil nil [1537 1556]))          
+    :file ".emacs"
+    :pointmax 1574
+    :fsize 2169
+    :lastmodtime '(19285 63357)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-mew.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("mew" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [227 254])
+            ("mew-send" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [255 287])
+            ("if" code nil nil [288 350])
+            ("mew-user-agent-compose" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [351 397])
+            ("if" code nil nil [398 467])
+            ("if" code nil nil [468 626])
+            ("set-default" code nil nil [628 663])
+            ("when" code nil nil [664 771])
+            ("if" code nil nil [772 837])
+            ("yunt-mew" package nil nil [860 879]))          
+    :file "yunt-mew.el"
+    :pointmax 907
+    :fsize 906
+    :lastmodtime '(19285 45346)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!yunt!.emacs.d!elisp!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

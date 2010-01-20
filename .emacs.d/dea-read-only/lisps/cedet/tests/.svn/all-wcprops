@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/666/trunk/lisps/cedet/tests
+END
+cit-el.elc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/666/trunk/lisps/cedet/tests/cit-el.elc
+END
+cit-uml.cgr
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/cit-uml.cgr
+END
+cit-texi.el
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/cit-texi.el
+END
+cit-extra-cpp.srt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/cit-extra-cpp.srt
+END
+cit-texi.elc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/666/trunk/lisps/cedet/tests/cit-texi.elc
+END
+cit-load.el
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/cit-load.el
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/README
+END
+cit-cpp.el
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/cit-cpp.el
+END
+cit-load.elc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/666/trunk/lisps/cedet/tests/cit-load.elc
+END
+Lisp-compile-script
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/666/trunk/lisps/cedet/tests/Lisp-compile-script
+END
+cit-cpp.elc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/666/trunk/lisps/cedet/tests/cit-cpp.elc
+END
+cit-gnustep.el
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/cit-gnustep.el
+END
+Project.ede
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/Project.ede
+END
+cit-gnustep.elc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/666/trunk/lisps/cedet/tests/cit-gnustep.elc
+END
+cedet-integ-test.el
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/cedet-integ-test.el
+END
+cit-test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/cit-test.sh
+END
+cedet-integ-test.elc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/666/trunk/lisps/cedet/tests/cedet-integ-test.elc
+END
+cit-srec.el
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/cit-srec.el
+END
+cit-uml.el
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/cit-uml.el
+END
+cit-srec.elc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/666/trunk/lisps/cedet/tests/cit-srec.elc
+END
+cit-el.el
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/cit-el.el
+END
+cit-uml.elc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/666/trunk/lisps/cedet/tests/cit-uml.elc
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/.cvsignore
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/664/trunk/lisps/cedet/tests/Makefile
+END

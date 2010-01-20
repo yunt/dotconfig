@@ -1,0 +1,21 @@
+void usage(int code = 1);
+
+void usage(int code /* = 1 */)
+{
+    std::ostream * os = NULL;
+
+    if (code != 0)
+    {
+        os = &std::cerr;
+    }
+    else
+    {
+        os = &std::cout;
+    }
+
+    *os << "usage: "
+        << PROGRAM_NAME << std::endl;
+    *os << "Last Make: " << __DATE__ << " " << __TIME__ << std::endl;
+
+    exit(code);
+}

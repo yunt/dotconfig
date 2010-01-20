@@ -1,0 +1,5 @@
+# echo to stdout
+echoo()
+{
+    printf "$*\n"
+}

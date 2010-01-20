@@ -1,0 +1,11 @@
+# $1: installDir
+installDir="/usr/bin"
+install()
+{
+    cp "$0" "${installDir}"
+    ret=$?
+    if [ "${ret}" = 0 ]; then
+        echoo "Install $PROGRAM_NAME finished."
+    fi
+    exit "${ret}"
+}

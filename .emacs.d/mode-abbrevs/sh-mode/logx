@@ -1,0 +1,8 @@
+# 记录日志
+# $1: 日志内容
+# $2: 日志文件名
+# $3: 日志类型 info - info, warn - warnning, err - error, 缺省为info
+function log()
+{
+    print "$1" "$3" 0 "$2"
+}

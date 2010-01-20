@@ -1,0 +1,2225 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/505/trunk/mode-abbrevs/c-mode
+END
+isprintx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/isprintx
+END
+socketx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/socketx
+END
+boolx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/boolx
+END
+casinx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/casinx
+END
+accessx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/accessx
+END
+assertx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/assertx
+END
+gethostbyaddrx
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/gethostbyaddrx
+END
+lseekx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/lseekx
+END
+gethostbynamex
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/gethostbynamex
+END
+dup2x
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/dup2x
+END
+bcopyx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/bcopyx
+END
+setvbufx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/setvbufx
+END
+filex
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/filex
+END
+dirnamex
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/dirnamex
+END
+mkstempx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mkstempx
+END
+pthreadcondwaitx
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pthreadcondwaitx
+END
+fstatx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fstatx
+END
+reallocx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/reallocx
+END
+stpcpyx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/stpcpyx
+END
+atanx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/atanx
+END
+isasciix
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/isasciix
+END
+csnumx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/csnumx
+END
+filterx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/filterx
+END
+ostrx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ostrx
+END
+cacosx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/cacosx
+END
+connectx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/connectx
+END
+clockx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/clockx
+END
+pipex
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pipex
+END
+alphasortx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/alphasortx
+END
+pyparsetuplex
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pyparsetuplex
+END
+strndupx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strndupx
+END
+doublesleepx
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/doublesleepx
+END
+rcx
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/rcx
+END
+strchrx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strchrx
+END
+mkdirx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mkdirx
+END
+strx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strx
+END
+fdatasyncx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fdatasyncx
+END
+cprojx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/cprojx
+END
+isalphax
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/isalphax
+END
+divx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/divx
+END
+fsetposx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fsetposx
+END
+ungetcx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ungetcx
+END
+asprintfx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/asprintfx
+END
+isupperx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/isupperx
+END
+retx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/347/trunk/mode-abbrevs/c-mode/retx
+END
+strtoqx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strtoqx
+END
+fseekx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fseekx
+END
+isgraphx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/isgraphx
+END
+ifx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/123/trunk/mode-abbrevs/c-mode/ifx
+END
+pthreadmutexinitx
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pthreadmutexinitx
+END
+sbrkx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/sbrkx
+END
+strlenx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strlenx
+END
+warnx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/warnx
+END
+isalnumx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/isalnumx
+END
+bindtextdomainx
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/bindtextdomainx
+END
+fclosex
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fclosex
+END
+filenox
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/filenox
+END
+fseekox
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fseekox
+END
+rmdirx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/rmdirx
+END
+brkx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/brkx
+END
+execlpx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/execlpx
+END
+putenvx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/putenvx
+END
+endlx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/endlx
+END
+strdupax
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strdupax
+END
+erfcfx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/erfcfx
+END
+ccx
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ccx
+END
+catanx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/catanx
+END
+errx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/errx
+END
+erflx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/erflx
+END
+strtoullx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strtoullx
+END
+memalignx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/memalignx
+END
+chdirx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/chdirx
+END
+memccpyx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/memccpyx
+END
+callocx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/callocx
+END
+linkx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/linkx
+END
+rcgotox
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/rcgotox
+END
+ferrorx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ferrorx
+END
+fchmodx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fchmodx
+END
+stpncpyx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/stpncpyx
+END
+pylockx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pylockx
+END
+powx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/powx
+END
+mlockx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mlockx
+END
+longjmpx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/longjmpx
+END
+exitx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/exitx
+END
+copyx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/copyx
+END
+fdopenx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fdopenx
+END
+bindx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/bindx
+END
+fileexistsx
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fileexistsx
+END
+findx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/findx
+END
+fchownx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fchownx
+END
+elsex
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/255/trunk/mode-abbrevs/c-mode/elsex
+END
+dupx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/dupx
+END
+rewindx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/rewindx
+END
+mcheckx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mcheckx
+END
+scanfx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/scanfx
+END
+strtoimaxx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strtoimaxx
+END
+atexitx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/atexitx
+END
+recvx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/recvx
+END
+strtollx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strtollx
+END
+setenvx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/setenvx
+END
+copycoutx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/copycoutx
+END
+stringx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/stringx
+END
+strtoumaxx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strtoumaxx
+END
+mpifinalizex
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mpifinalizex
+END
+elseifx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/255/trunk/mode-abbrevs/c-mode/elseifx
+END
+mpiisendx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mpiisendx
+END
+gethostnamex
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/gethostnamex
+END
+strtodx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strtodx
+END
+strncasecmpx
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strncasecmpx
+END
+minx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/minx
+END
+ispunctx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ispunctx
+END
+atofx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/atofx
+END
+doubletimex
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/doubletimex
+END
+memcpyx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/memcpyx
+END
+setx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/setx
+END
+doitx.el
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/doitx.el
+END
+strcatx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strcatx
+END
+strndupax
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strndupax
+END
+tmpfilex
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/tmpfilex
+END
+openx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/openx
+END
+mkdtempx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mkdtempx
+END
+forkx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/forkx
+END
+headx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/157/trunk/mode-abbrevs/c-mode/headx
+END
+ooeqx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ooeqx
+END
+eqx
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/eqx
+END
+cexpfx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/cexpfx
+END
+ftellx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ftellx
+END
+putcharx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/putcharx
+END
+sqliteexecx
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/sqliteexecx
+END
+pthreadcondbroadcastx
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pthreadcondbroadcastx
+END
+memcmpx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/memcmpx
+END
+strrchrx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strrchrx
+END
+ceillx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ceillx
+END
+strfryx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strfryx
+END
+toasciix
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/toasciix
+END
+ftruncatex
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ftruncatex
+END
+strcspnx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strcspnx
+END
+mktempx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mktempx
+END
+mlockallx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mlockallx
+END
+fwidex
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fwidex
+END
+clearenvx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/clearenvx
+END
+fwprintfx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fwprintfx
+END
+realpathx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/realpathx
+END
+mpirecvx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mpirecvx
+END
+fopenx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fopenx
+END
+renamex
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/renamex
+END
+abortx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/abortx
+END
+cabsx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/cabsx
+END
+listx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/listx
+END
+erfx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/erfx
+END
+strtoulx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strtoulx
+END
+mapx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mapx
+END
+pf
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pf
+END
+ltx
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ltx
+END
+logx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/logx
+END
+strtofx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strtofx
+END
+strerrorx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strerrorx
+END
+systemx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/systemx
+END
+strnlenx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strnlenx
+END
+sprintfx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/sprintfx
+END
+mktimex
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mktimex
+END
+ccosx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ccosx
+END
+fflushx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fflushx
+END
+sinx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/sinx
+END
+execvpx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/execvpx
+END
+funcx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/funcx
+END
+ftrylockfilex
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ftrylockfilex
+END
+strftimex
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strftimex
+END
+toupperx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/toupperx
+END
+memmovex
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/memmovex
+END
+execlex
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/execlex
+END
+absx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/absx
+END
+mpiinitx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mpiinitx
+END
+mempcpyx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mempcpyx
+END
+syncx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/syncx
+END
+oox
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/oox
+END
+hostnamex
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/hostnamex
+END
+errxx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/errxx
+END
+randomx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/randomx
+END
+isunorderedx
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/isunorderedx
+END
+cosx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/cosx
+END
+mainx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/505/trunk/mode-abbrevs/c-mode/mainx
+END
+crealx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/crealx
+END
+strpbrkx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strpbrkx
+END
+fgetcx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fgetcx
+END
+writex
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/writex
+END
+pairx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pairx
+END
+atoix
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/atoix
+END
+printx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/printx
+END
+memrchrx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/memrchrx
+END
+raisex
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/raisex
+END
+strcasecmpx
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strcasecmpx
+END
+socketpairx
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/socketpairx
+END
+drand48x
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/drand48x
+END
+fgetsx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fgetsx
+END
+execvx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/execvx
+END
+coutx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/coutx
+END
+bzerox
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/bzerox
+END
+popenx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/popenx
+END
+fsyncx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fsyncx
+END
+gethostentx
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/gethostentx
+END
+strcpyx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strcpyx
+END
+ctanx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ctanx
+END
+endutentx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/endutentx
+END
+isspacex
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/isspacex
+END
+erfclx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/erfclx
+END
+strcasestrx
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strcasestrx
+END
+sigpipex
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/sigpipex
+END
+sqlitecbx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/sqlitecbx
+END
+strptimex
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strptimex
+END
+strcmpx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strcmpx
+END
+strverscmpx
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strverscmpx
+END
+basenamex
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/basenamex
+END
+ceilx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ceilx
+END
+setintersectx
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/setintersectx
+END
+sscanfx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/sscanfx
+END
+endserventx
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/endserventx
+END
+strncatx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strncatx
+END
+erfcx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/erfcx
+END
+strsepx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strsepx
+END
+tanx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/tanx
+END
+symlinkx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/symlinkx
+END
+getlinex
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/getlinex
+END
+memsetx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/memsetx
+END
+consumerx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/consumerx
+END
+tmpnamx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/tmpnamx
+END
+clearerrx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/clearerrx
+END
+fchdirx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fchdirx
+END
+strstrx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strstrx
+END
+pthreadjoinx
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pthreadjoinx
+END
+ioctlx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ioctlx
+END
+atollx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/atollx
+END
+casex
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/casex
+END
+mkfifox
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mkfifox
+END
+cargx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/cargx
+END
+recvfromx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/recvfromx
+END
+cbrtx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/cbrtx
+END
+tolowerx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/tolowerx
+END
+pthreadcreate2x
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pthreadcreate2x
+END
+timex
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/timex
+END
+acceptx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/acceptx
+END
+atolx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/atolx
+END
+fwritex_
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fwritex_
+END
+fscanfx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fscanfx
+END
+switchx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/switchx
+END
+cryptx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/cryptx
+END
+setjmpx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/setjmpx
+END
+pthreadfuncx
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pthreadfuncx
+END
+sttyx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/sttyx
+END
+pyfuncx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pyfuncx
+END
+closex
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/closex
+END
+ferr
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ferr
+END
+bsearchx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/bsearchx
+END
+qsortx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/qsortx
+END
+fprintfx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fprintfx
+END
+cexplx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/cexplx
+END
+pthreadcreatex
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pthreadcreatex
+END
+putcx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/putcx
+END
+confstrx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/confstrx
+END
+backtracex
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/backtracex
+END
+execvex
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/execvex
+END
+selectx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/selectx
+END
+feofx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/feofx
+END
+strtouqx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strtouqx
+END
+bcmpx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/bcmpx
+END
+pthreadmutexlockx
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pthreadmutexlockx
+END
+randx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/randx
+END
+endpwentx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/endpwentx
+END
+nanosleepx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/nanosleepx
+END
+strtokx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strtokx
+END
+getenvx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/getenvx
+END
+errorx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/errorx
+END
+sendx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/sendx
+END
+loopi
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/loopi
+END
+chmodx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/chmodx
+END
+putsx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/putsx
+END
+killx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/killx
+END
+strtoldx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strtoldx
+END
+callbackx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/callbackx
+END
+mpibarrierx
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mpibarrierx
+END
+cexpx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/cexpx
+END
+funlockfilex
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/funlockfilex
+END
+checkrcx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/checkrcx
+END
+getoptx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/getoptx
+END
+unsx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/220/trunk/mode-abbrevs/c-mode/unsx
+END
+fcntlx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fcntlx
+END
+loopu
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/loopu
+END
+sleepx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/sleepx
+END
+nullx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/nullx
+END
+isfinitex
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/isfinitex
+END
+vecx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/483/trunk/mode-abbrevs/c-mode/vecx
+END
+chownx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/chownx
+END
+btowcx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/btowcx
+END
+mpiirecvx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mpiirecvx
+END
+sstreamx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/sstreamx
+END
+endutxentx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/endutxentx
+END
+fputcx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fputcx
+END
+strdupx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strdupx
+END
+erffx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/erffx
+END
+mpitestx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mpitestx
+END
+asctimex
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/asctimex
+END
+pthreadmutexunlockx
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pthreadmutexunlockx
+END
+strtolx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strtolx
+END
+pthreadcondsignalx
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pthreadcondsignalx
+END
+readlinkx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/readlinkx
+END
+allocax
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/allocax
+END
+expx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/expx
+END
+alarmx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/alarmx
+END
+cuseridx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/cuseridx
+END
+listenx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/listenx
+END
+ctimex
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ctimex
+END
+fputsx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fputsx
+END
+strncpyx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strncpyx
+END
+iterx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/iterx
+END
+mknodx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mknodx
+END
+memchrx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/memchrx
+END
+readx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/readx
+END
+freex
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/freex
+END
+stimex
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/stimex
+END
+strchrnulx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strchrnulx
+END
+strncmpx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strncmpx
+END
+madvisex
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/madvisex
+END
+catopenx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/catopenx
+END
+strspnx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strspnx
+END
+asinx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/asinx
+END
+gethostidx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/gethostidx
+END
+mmapx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mmapx
+END
+gethostbyname2x
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/gethostbyname2x
+END
+sendtox
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/sendtox
+END
+freopenx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/freopenx
+END
+mpisendx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mpisendx
+END
+execlx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/execlx
+END
+printfx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/printfx
+END
+commentx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/commentx
+END
+strsignalx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strsignalx
+END
+srandx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/srandx
+END
+filesizex
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/filesizex
+END
+isattyx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/isattyx
+END
+shiftx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/shiftx
+END
+nicex
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/nicex
+END
+freadx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/freadx
+END
+acx
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/acx
+END
+testmainx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/142/trunk/mode-abbrevs/c-mode/testmainx
+END
+ftellox
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ftellox
+END
+maxx
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/maxx
+END
+acosx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/acosx
+END
+offsetx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/offsetx
+END
+lstatx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/lstatx
+END
+isdigitx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/isdigitx
+END
+removex
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/removex
+END
+fwritex
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/fwritex
+END
+mpibcastx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mpibcastx
+END
+snprintfx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/snprintfx
+END
+usagex
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/235/trunk/mode-abbrevs/c-mode/usagex
+END
+erand48x
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/erand48x
+END
+classx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/classx
+END
+mallocx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/mallocx
+END
+whilex
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/255/trunk/mode-abbrevs/c-mode/whilex
+END
+perrorx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/perrorx
+END
+statx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/statx
+END
+futimesx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/futimesx
+END
+iscntrlx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/iscntrlx
+END
+pthreadcondinitx
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/pthreadcondinitx
+END
+flushx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/flushx
+END
+floorx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/floorx
+END
+ceilfx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/ceilfx
+END
+strcollx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/strcollx
+END
+isblankx
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/isblankx
+END
+structx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/28/trunk/mode-abbrevs/c-mode/structx
+END
+forx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/253/trunk/mode-abbrevs/c-mode/forx
+END

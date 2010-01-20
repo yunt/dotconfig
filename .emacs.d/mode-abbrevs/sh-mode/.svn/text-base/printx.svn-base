@@ -1,0 +1,44 @@
+# 记录日志或/和打印
+# $1: 输出内容
+# $2: 输出类型 none info - info, warn - warnning, err - error, 缺省为none
+# $3: 是否输出到屏幕, 0不输出, 其他输出, 缺省输出
+# $4: 日志文件名, 缺省为空, 即不输出到文件
+# $5: 是否输出到日志文件, 0不输出, 其他输出, 缺省输出
+function print()
+{
+    content="$1"
+    toScreen="$3"
+    type="none"
+    if [ -n "$2" ]; then
+        type="$2"
+    fi
+    type=`tolower "${type}"`
+    file="$4"
+    toFile="$5"
+    
+    case "${type}" in
+        none)
+            typeStr=""
+            ;;
+        
+        info)
+            typeStr="[INFO] "
+            ;;
+
+        warn)
+            typeStr="[WARN] "
+            ;;
+
+        err)
+            typeStr="[ERR] "
+            ;;
+    esac
+
+    if [ "${toScreen}" != "0" ]; then
+        echo "${typeStr}${content}"
+    fi
+
+    if [ "${toFile}" != "0" -a -n "${file}" ]; then
+        echo "[`date  +'%x %X'`]${typeStr}${content}" >> "${file}"
+    fi
+}

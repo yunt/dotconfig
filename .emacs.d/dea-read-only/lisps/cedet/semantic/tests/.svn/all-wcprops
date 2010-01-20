@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests
+END
+testtemplates.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testtemplates.cpp
+END
+templates.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/templates.cpp
+END
+testsppreplace.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testsppreplace.c
+END
+testjavacomp.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testjavacomp.java
+END
+testnsp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testnsp.cpp
+END
+testsppreplaced.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testsppreplaced.c
+END
+gr-test.wy
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/gr-test.wy
+END
+testspp.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testspp.c
+END
+testusing.hh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testusing.hh
+END
+scopetest.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/scopetest.java
+END
+scopetest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/scopetest.cpp
+END
+test.make
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/test.make
+END
+testdoublens.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testdoublens.cpp
+END
+testvarnames.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testvarnames.c
+END
+test.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/test.c
+END
+test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/test.cpp
+END
+testsubclass.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testsubclass.cpp
+END
+testdoublens.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testdoublens.hpp
+END
+Project.ede
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/Project.ede
+END
+testtypedefs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testtypedefs.cpp
+END
+teststruct.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/teststruct.cpp
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/test.py
+END
+testusing.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testusing.cpp
+END
+testpolymorph.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testpolymorph.cpp
+END
+testfriends.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testfriends.cpp
+END
+testsppcomplete.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testsppcomplete.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/Makefile
+END
+testsubclass.hh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/testsubclass.hh
+END
+test.el
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/tests/test.el
+END

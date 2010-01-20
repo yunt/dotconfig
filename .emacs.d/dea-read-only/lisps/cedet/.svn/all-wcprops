@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/749/trunk/lisps/cedet
+END
+cedet-build.el
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/664/trunk/lisps/cedet/cedet-build.el
+END
+PRERELEASE_CHECKLIST
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/664/trunk/lisps/cedet/PRERELEASE_CHECKLIST
+END
+gettodos.sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/664/trunk/lisps/cedet/gettodos.sh
+END
+cedet-update-version.el
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/664/trunk/lisps/cedet/cedet-update-version.el
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/664/trunk/lisps/cedet/INSTALL
+END
+USING_CEDET_FROM_CVS
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/664/trunk/lisps/cedet/USING_CEDET_FROM_CVS
+END
+cedet-update-changelog.el
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/664/trunk/lisps/cedet/cedet-update-changelog.el
+END
+Makefile.wwwinfo
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/664/trunk/lisps/cedet/Makefile.wwwinfo
+END
+testdist.sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/664/trunk/lisps/cedet/testdist.sh
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/664/trunk/lisps/cedet/.cvsignore
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/664/trunk/lisps/cedet/Makefile
+END
+cedet-ediff.el
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/664/trunk/lisps/cedet/cedet-ediff.el
+END

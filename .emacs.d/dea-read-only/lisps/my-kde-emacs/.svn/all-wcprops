@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs
+END
+kde-emacs-vars.el
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/kde-emacs-vars.el
+END
+kde-emacs-bindings.el
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/kde-emacs-bindings.el
+END
+kde-emacs-general.el
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/kde-emacs-general.el
+END
+HACKING
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/HACKING
+END
+kde-emacs-utils.el
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/kde-emacs-utils.el
+END
+kde-emacs.el
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/kde-emacs.el
+END
+dirvars.el
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/dirvars.el
+END
+kde-emacs-compat.el
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/kde-emacs-compat.el
+END
+kde-emacs-semantic.el
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/kde-emacs-semantic.el
+END
+kde-emacs-doc.el
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/kde-emacs-doc.el
+END
+klaralv.el
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/klaralv.el
+END
+sourcepair.el
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/sourcepair.el
+END
+kde-emacs-core.el
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/kde-emacs-core.el
+END
+kde-emacs-tips.texi
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/33/trunk/lisps/my-kde-emacs/kde-emacs-tips.texi
+END

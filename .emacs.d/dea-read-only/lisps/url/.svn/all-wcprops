@@ -1,0 +1,365 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/37/trunk/lisps/url
+END
+url-irc.elc
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/37/trunk/lisps/url/url-irc.elc
+END
+url-gw.elc
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/37/trunk/lisps/url/url-gw.elc
+END
+url-history.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/37/trunk/lisps/url/url-history.el.gz
+END
+url-util.elc
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/37/trunk/lisps/url/url-util.elc
+END
+url.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/37/trunk/lisps/url/url.el.gz
+END
+url-http.elc
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/37/trunk/lisps/url/url-http.elc
+END
+url-ldap.elc
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/37/trunk/lisps/url/url-ldap.elc
+END
+url-proxy.elc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/37/trunk/lisps/url/url-proxy.elc
+END
+url-mailto.elc
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/37/trunk/lisps/url/url-mailto.elc
+END
+url-about.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/37/trunk/lisps/url/url-about.el.gz
+END
+url-nfs.elc
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/37/trunk/lisps/url/url-nfs.elc
+END
+url-dired.elc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/37/trunk/lisps/url/url-dired.elc
+END
+url-vars.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/37/trunk/lisps/url/url-vars.el.gz
+END
+url-irc.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/37/trunk/lisps/url/url-irc.el.gz
+END
+url-util.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/37/trunk/lisps/url/url-util.el.gz
+END
+url-ftp.elc
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/37/trunk/lisps/url/url-ftp.elc
+END
+url-gw.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/37/trunk/lisps/url/url-gw.el.gz
+END
+url-http.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/37/trunk/lisps/url/url-http.el.gz
+END
+url-ldap.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/37/trunk/lisps/url/url-ldap.el.gz
+END
+url-proxy.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/37/trunk/lisps/url/url-proxy.el.gz
+END
+url-cid.elc
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/37/trunk/lisps/url/url-cid.elc
+END
+url-handlers.elc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/37/trunk/lisps/url/url-handlers.elc
+END
+url-mailto.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/37/trunk/lisps/url/url-mailto.el.gz
+END
+url-auth.elc
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/37/trunk/lisps/url/url-auth.elc
+END
+url-nfs.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/37/trunk/lisps/url/url-nfs.el.gz
+END
+url-methods.elc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/37/trunk/lisps/url/url-methods.elc
+END
+url-dired.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/37/trunk/lisps/url/url-dired.el.gz
+END
+url-cache.elc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/37/trunk/lisps/url/url-cache.elc
+END
+url-ftp.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/37/trunk/lisps/url/url-ftp.el.gz
+END
+url-cookie.elc
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/37/trunk/lisps/url/url-cookie.elc
+END
+url-parse.elc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/37/trunk/lisps/url/url-parse.elc
+END
+url-dav.elc
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/37/trunk/lisps/url/url-dav.elc
+END
+url-cid.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/37/trunk/lisps/url/url-cid.el.gz
+END
+url-handlers.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/37/trunk/lisps/url/url-handlers.el.gz
+END
+url-news.elc
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/37/trunk/lisps/url/url-news.elc
+END
+url-auth.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/37/trunk/lisps/url/url-auth.el.gz
+END
+url-privacy.elc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/37/trunk/lisps/url/url-privacy.elc
+END
+url-methods.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/37/trunk/lisps/url/url-methods.el.gz
+END
+url-file.elc
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/37/trunk/lisps/url/url-file.elc
+END
+url-cache.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/37/trunk/lisps/url/url-cache.el.gz
+END
+url-expand.elc
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/37/trunk/lisps/url/url-expand.elc
+END
+url-ns.elc
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/37/trunk/lisps/url/url-ns.elc
+END
+vc-dav.elc
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/37/trunk/lisps/url/vc-dav.elc
+END
+url-cookie.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/37/trunk/lisps/url/url-cookie.el.gz
+END
+url-imap.elc
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/37/trunk/lisps/url/url-imap.elc
+END
+url-dav.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/37/trunk/lisps/url/url-dav.el.gz
+END
+url-parse.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/37/trunk/lisps/url/url-parse.el.gz
+END
+url-news.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/37/trunk/lisps/url/url-news.el.gz
+END
+url-privacy.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/37/trunk/lisps/url/url-privacy.el.gz
+END
+url-expand.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/37/trunk/lisps/url/url-expand.el.gz
+END
+url-file.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/37/trunk/lisps/url/url-file.el.gz
+END
+url-misc.elc
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/37/trunk/lisps/url/url-misc.elc
+END
+url-ns.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/37/trunk/lisps/url/url-ns.el.gz
+END
+vc-dav.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/37/trunk/lisps/url/vc-dav.el.gz
+END
+url-history.elc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/37/trunk/lisps/url/url-history.elc
+END
+url-imap.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/37/trunk/lisps/url/url-imap.el.gz
+END
+url.elc
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/37/trunk/lisps/url/url.elc
+END
+url-misc.el.gz
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/37/trunk/lisps/url/url-misc.el.gz
+END
+url-about.elc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/37/trunk/lisps/url/url-about.elc
+END
+url-vars.elc
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/37/trunk/lisps/url/url-vars.elc
+END

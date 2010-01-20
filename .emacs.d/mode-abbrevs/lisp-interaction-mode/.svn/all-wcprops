@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/91/trunk/mode-abbrevs/lisp-interaction-mode
+END
+foo
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/28/trunk/mode-abbrevs/lisp-interaction-mode/foo
+END
+testx
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/91/trunk/mode-abbrevs/lisp-interaction-mode/testx
+END
+choosex
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/28/trunk/mode-abbrevs/lisp-interaction-mode/choosex
+END
+defunx
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/60/trunk/mode-abbrevs/lisp-interaction-mode/defunx
+END
+headx
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/81/trunk/mode-abbrevs/lisp-interaction-mode/headx
+END

@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine
+END
+erlang-edoc.el
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/erlang-edoc.el
+END
+semantic-java.el
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/semantic-java.el
+END
+erlang.by
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/erlang.by
+END
+semantic-scm.el
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/semantic-scm.el
+END
+semantic-bovine.el
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/semantic-bovine.el
+END
+semantic-c.el
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/semantic-c.el
+END
+semantic-bovine.elc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-bovine.elc
+END
+semantic-c.elc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-c.elc
+END
+semantic-scm.elc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-scm.elc
+END
+semantic-make-by.elc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-make-by.elc
+END
+bovine-grammar-macros.elc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/bovine-grammar-macros.elc
+END
+semantic-c-by.el
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-c-by.el
+END
+semantic-scm-by.el
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-scm-by.el
+END
+bovinator-compile-script
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/bovinator-compile-script
+END
+c.by
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/c.by
+END
+skeleton.by
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/skeleton.by
+END
+semantic-c-by.elc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-c-by.elc
+END
+semantic-scm-by.elc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-scm-by.elc
+END
+languages-compile-script
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/languages-compile-script
+END
+Project.ede
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/Project.ede
+END
+bovine-debug.el
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/bovine-debug.el
+END
+bovine-grammar.elc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/bovine-grammar.elc
+END
+semantic-erlang.el
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/semantic-erlang.el
+END
+semantic-erlang.elc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-erlang.elc
+END
+scheme.by
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/scheme.by
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/.cvsignore
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/Makefile
+END
+semantic-erlang-by.el
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-erlang-by.el
+END
+semantic-make.elc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-make.elc
+END
+semantic-erlang-by.elc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-erlang-by.elc
+END
+semantic-java.elc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-java.elc
+END
+semantic-make-by.el
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-make-by.el
+END
+make.by
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/make.by
+END
+bovine-grammar-macros.el
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/bovine-grammar-macros.el
+END
+semantic-gcc.el
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/semantic-gcc.el
+END
+semantic-skeleton-by.el
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/semantic-skeleton-by.el
+END
+semantic-skel.el
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/semantic-skel.el
+END
+semantic-gcc.elc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-gcc.elc
+END
+semantic-el.el
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/semantic-el.el
+END
+grammar-make-script
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/grammar-make-script
+END
+semantic-el.elc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/semantic-el.elc
+END
+bovine-grammar.el
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/bovine-grammar.el
+END
+bovine-debug.elc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/666/trunk/lisps/cedet/semantic/bovine/bovine-debug.elc
+END
+semantic-make.el
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/664/trunk/lisps/cedet/semantic/bovine/semantic-make.el
+END

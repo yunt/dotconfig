@@ -1,0 +1,6 @@
+# $1: 输出内容
+# $2: 输出类型 1 or info - info, 2 or warn - warnning, 3 or err - error, 缺省为info
+function echoWithType()
+{
+    print "$1" "$2"
+}

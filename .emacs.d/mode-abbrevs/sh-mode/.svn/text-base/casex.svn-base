@@ -1,0 +1,8 @@
+case <field "value"> in
+    <field "patern">)
+    <endpoint>
+    ;;
+
+    *)
+    ;;
+esac

@@ -1,0 +1,69 @@
+;; Object yunt/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "yunt/"
+  :tables (list 
+   (semanticdb-table "test.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("string" include (:system-flag t) nil [1 17])
+            ("iostream" include (:system-flag t) nil [18 37])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [39 59])
+            ("main" function (:type "int") nil [61 120]))          
+    :file "test.cpp"
+    :pointmax 121
+    :fsize 121
+    :lastmodtime '(19282 10178)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table ".emacs"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("my-emacs-path" variable
+               (:constant-flag t
+                :default-value "~/.emacs.d/")
+                nil [242 309])
+            ("mswin" variable (:default-value (equal window-system (quote w32))) nil [310 385])
+            ("cygwin" variable (:default-value (equal system-type (quote cygwin))) nil [386 460])
+            ("is-before-emacs-21" variable
+               (:constant-flag t
+                :default-value (>= 21 emacs-major-version))
+                nil [461 538])
+            ("is-after-emacs-23" variable
+               (:constant-flag t
+                :default-value (<= 23 emacs-major-version))
+                nil [539 616])
+            ("setq" code nil nil [639 667])
+            ("setq" code nil nil [668 714])
+            ("setq" code nil nil [774 826])
+            ("setq" code nil nil [838 887])
+            ("setq" code nil nil [949 1001])
+            ("setq" code nil nil [1002 1058])
+            ("setq" code nil nil [1313 1366])
+            ("load" code nil nil [1402 1424])
+            ("load" code nil nil [1425 1444])
+            ("load" code nil nil [1445 1464])
+            ("load" code nil nil [1489 1510])
+            ("load" code nil nil [1511 1532])
+            ("load" code nil nil [1533 1550])
+            ("load" code nil nil [1615 1634])
+            ("load" code nil nil [1654 1673])
+            ("load" code nil nil [1714 1739])
+            ("load" code nil nil [1740 1762])
+            ("load" code nil nil [1763 1785])
+            ("load" code nil nil [1786 1812])
+            ("load" code nil nil [1973 1989])
+            ("desktop-save-mode" code nil nil [1990 2009]))          
+    :file ".emacs"
+    :pointmax 2027
+    :fsize 2680
+    :lastmodtime '(19286 17347)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!yunt!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

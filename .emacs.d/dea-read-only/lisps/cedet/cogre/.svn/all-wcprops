@@ -1,0 +1,335 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/749/trunk/lisps/cedet/cogre
+END
+cogre-convert.elc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/cogre-convert.elc
+END
+cogre-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-mode.el
+END
+hacks-compile-script
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/hacks-compile-script
+END
+cogre-mode.elc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/cogre-mode.elc
+END
+cogre-node.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-node.xpm
+END
+COGRE-compile-script
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/COGRE-compile-script
+END
+wisent-dot-wy.el
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/wisent-dot-wy.el
+END
+cogre-arrow.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-arrow.xpm
+END
+cogre-periodic.el
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-periodic.el
+END
+wisent-dot.wy
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/wisent-dot.wy
+END
+cogre-link.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-link.xpm
+END
+cogre-periodic.elc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/cogre-periodic.elc
+END
+cogre.el
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre.el
+END
+cogre-semantic.el
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-semantic.el
+END
+cogre.elc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/748/trunk/lisps/cedet/cogre/cogre.elc
+END
+Project.ede
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/Project.ede
+END
+cogre-note.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-note.xpm
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/INSTALL
+END
+cogre.texi
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre.texi
+END
+cogre-load.el
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-load.el
+END
+cogre-layout.elc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/cogre-layout.elc
+END
+cogre-hasa.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-hasa.xpm
+END
+cogre-isa.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-isa.xpm
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/.cvsignore
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/Makefile
+END
+picture-hack.el
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/picture-hack.el
+END
+utests-compile-script
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/utests-compile-script
+END
+cogre-srecode.el
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-srecode.el
+END
+picture-hack.elc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/picture-hack.elc
+END
+cogre-srecode.elc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/cogre-srecode.elc
+END
+autoloads-compile-script
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/autoloads-compile-script
+END
+cogre-ascii.el
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-ascii.el
+END
+cogre-ascii.elc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/cogre-ascii.elc
+END
+cogre-uml.el
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-uml.el
+END
+cogre.info
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/cogre.info
+END
+cogre-package.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-package.xpm
+END
+init-compile-script
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/init-compile-script
+END
+wisent-dot.el
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/wisent-dot.el
+END
+wisent-dot-wy.elc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/wisent-dot-wy.elc
+END
+wisent-dot.elc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/wisent-dot.elc
+END
+cogre-utest.el
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-utest.el
+END
+cogre-semantic.elc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/cogre-semantic.elc
+END
+cogre-utest.elc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/cogre-utest.elc
+END
+grammar-make-script
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/grammar-make-script
+END
+cogre-instance.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-instance.xpm
+END
+cogre-dot-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-dot-mode.el
+END
+test.dot
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/test.dot
+END
+cogre-class.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-class.xpm
+END
+cogre-dot-mode.elc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/cogre-dot-mode.elc
+END
+cogre-layout.el
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-layout.el
+END
+cogre-convert.el
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/664/trunk/lisps/cedet/cogre/cogre-convert.el
+END
+Mode-compile-script
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/Mode-compile-script
+END
+cogre-loaddefs.el
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/cogre-loaddefs.el
+END
+cogre-load.elc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/cogre-load.elc
+END
+dot-compile-script
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/666/trunk/lisps/cedet/cogre/dot-compile-script
+END

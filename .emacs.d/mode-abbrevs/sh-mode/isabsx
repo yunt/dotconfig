@@ -1,0 +1,6 @@
+# "$1"是否为绝对路径
+# $1: 待判断的路径
+function isAbsolute()
+{
+    return [ `expr substr "$1" 1 1` = "/" ]
+}

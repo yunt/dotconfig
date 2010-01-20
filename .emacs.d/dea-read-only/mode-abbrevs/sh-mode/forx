@@ -1,0 +1,3 @@
+for <field "i"> in <field "range">; do
+    <endpoint>
+done

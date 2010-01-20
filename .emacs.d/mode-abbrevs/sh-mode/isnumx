@@ -1,0 +1,5 @@
+# $1: ´ýÅÐ¶ÏµÄ×Ö·û´®
+function isNum()
+{
+    return `echo "$1" | awk '{if ($0 ~ /^[[:space:]]*[0-9]+[[:space:]]*$/){print "0"} else{print "1"}}'`
+}

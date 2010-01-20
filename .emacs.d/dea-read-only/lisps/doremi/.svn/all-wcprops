@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/652/trunk/lisps/doremi
+END
+doremi-cmd.el
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/652/trunk/lisps/doremi/doremi-cmd.el
+END
+doremi-frm.el
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/603/trunk/lisps/doremi/doremi-frm.el
+END
+menu-bar+.el
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/574/trunk/lisps/doremi/menu-bar+.el
+END
+thumb-frm.el
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/574/trunk/lisps/doremi/thumb-frm.el
+END
+zoom-frm.el
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/502/trunk/lisps/doremi/zoom-frm.el
+END
+setup-keys.el
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/574/trunk/lisps/doremi/setup-keys.el
+END
+doremi-mac.el
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/491/trunk/lisps/doremi/doremi-mac.el
+END
+doremi.el
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/603/trunk/lisps/doremi/doremi.el
+END
