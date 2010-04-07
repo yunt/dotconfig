@@ -1,44 +1,130 @@
 " vim:expandtab shiftwidth=2 tabstop=8 textwidth=72
 
 " Wu Yongwei's _vimrc for Vim 7
-" Last Change: 2010-04-07 19:44:36
+" Last Change: 2010-04-07 21:51:20
 
-if v:version < 700
-  echoerr 'This _vimrc requires Vim 7 or later.'
-  quit
-endif
+" first the disabled features due to security concerns
+set modelines=0                  " no modelines [http://www.guninski.com/vim1.html]
+let g:secure_modelines_verbose=0 " securemodelines vimscript
+let g:secure_modelines_modelines = 15 " 15 available modelines
+
+" ---------------------------------------------------------------------------
+" operational settings
+syntax on
+set ruler                     " show the line number on the bar
+set more                      " use more prompt
+set autoread                  " watch for file changes
+set number                    " line numbers
+set nohidden                  " close the buffer when I close a tab (I use tabs more than buffers)
+set noautowrite               " don't automagically write on :next
+set lazyredraw                " don't redraw when don't have to
+set showmode                  " show the mode all the time
+set showcmd                   " Show us the command we're typing
+set nocompatible              " vim, not vi
+set autoindent smartindent    " auto/smart indent
+set expandtab                 " expand tabs to spaces (except java, see autocmd below)
+set smarttab                  " tab and backspace are smart
+set tabstop=6                 " 6 spaces
+set shiftwidth=6              " shift width
+set scrolloff=3               " keep at least 3 lines above/below
+set sidescrolloff=5           " keep at least 5 lines left/right
+set backspace=indent,eol,start  " backspace over all kinds of things
+set showfulltag               " show full completion tags
+set noerrorbells              " no error bells please
+set linebreak                 " wrap at 'breakat' instead of last char
+set tw=500                    " default textwidth is a max of 500
+set cmdheight=1               " command line two lines high
+set undolevels=500            " 500 undos
+set updatecount=100           " switch every 100 chars
+set complete=.,w,b,u,U,t,i,d  " do lots of scanning on tab completion
+set ttyfast                   " we have a fast terminal
+filetype on                   " Enable filetype detection
+filetype indent on            " Enable filetype-specific indenting
+filetype plugin on            " Enable filetype-specific plugins
+compiler ruby                 " Enable compiler support for ruby
+set wildmode=longest:full     " *wild* mode
+set wildignore+=*.o,*~,.lo    " ignore object files
+set wildmenu                  " menu has tab completion
+let maplocalleader=','        " all my macros start with ,
+" Deprecated, using SimpleFold with '\f' now. ,sf to revert
+"set foldmethod=syntax         " fold on syntax automagically, always
+"set foldcolumn=2              " 2 lines of column for fold showing, always
+set whichwrap+=<,>,h,l        " backspaces and cursor keys wrap to
+set magic                     " Enable the "magic"
+set visualbell t_vb=          " Disable ALL bells
+set cursorline                " show the cursor line
+set matchpairs+=<:>           " add < and > to match pairs
+set tags=tags;/               " search recursively up for tags
+set helplang=cn
+set fencs=ucs-bom,utf-8,chinese
+set encoding=utf-8
+
+" highlight over 80 columns
+"highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+highlight OverLength cterm=reverse
+match OverLength /\%81v.*/
 
 if has('autocmd')
   " Remove ALL autocommands for the current group
   au!
 endif
 
-if has('gui_running')
-  " Always show file types in menu
-  let do_syntax_sel_menu=1
-endif
+if !has("gui_running")
+      "colorscheme candycode   " yum candy
+
+      " I pretty much only like this scheme if I can use SIMBL with terminal
+      " colors:
+      " (http://www.culater.net/software/TerminalColors/TerminalColors.php)
+      " to change the really hard-to-read dark blue into a lighter shade.
+      " Or; Use iterm with Tango colors
+      colorscheme desert256
+      "colorscheme rdark
+end
+if has("gui_running")
+      "colorscheme rdark
+      colorscheme tango-desert
+      let rdark_current_line=1  " highlight current line
+      set background=dark
+      set noantialias
+      set guioptions-=T        " no toolbar
+      set guioptions-=l        " no left scrollbar
+      set guioptions-=L        " no left scrollbar
+      set guioptions-=r        " no right scrollbar
+      set guioptions-=R        " no right scrollbar
+      set lines=64
+      set columns=135
+      "set transparency=0
+      set gfn=Monaco\ 10
+      set clipboard=unnamed
+      let do_syntax_sel_menu=1 " Always show file types in menu
+end
 
 if has('multi_byte')
   " Legacy encoding is the system default encoding
   let legacy_encoding=&encoding
 endif
 
-colors tango-desert
-if has('gui_running') && has('multi_byte')
-  " Set encoding (and possibly fileencodings)
-  if $LANG !~ '\.' || $LANG =~? '\.UTF-8$'
-    set encoding=utf-8
-  else
-    let &encoding=matchstr($LANG, '\.\zs.*')
-    let &fileencodings='gbk,ucs-bom,utf-8,' . &encoding
-    let legacy_encoding=&encoding
-  endif
-  set guioptions=egtm
-  set lines=40
-  set columns=120
-  set nu
-endif
+"{{{插件设置
+" Settings for NERD_Tree
+let NERDTreeWinPos="left"
+let NERDTreeWinSize=35
 
+" Settings for taglist.vim
+let Tlist_Use_Right_Window=1
+let Tlist_Auto_Open=0
+let Tlist_Enable_Fold_Column=0
+let Tlist_Show_One_File = 1         " Only show tags for current buffer
+let Tlist_Compact_Format=0
+let Tlist_WinWidth=28
+let Tlist_Exit_OnlyWindow=1
+let Tlist_File_Fold_Auto_Close = 1
+
+" Settings for :TOhtml
+let html_number_lines=1
+let html_use_css=1
+let use_xhtml=1
+
+" Settings for NeoComplCahce
 let g:NeoComplCache_EnableAtStartup = 1
 "let g:NeoComplCache_DictionaryFileTypeLists = {
       "\ 'default' : '',
@@ -51,8 +137,8 @@ let g:NeoComplCache_DictionaryFileTypeLists = {
       \ 'default' : '',
       \ 'php' : $HOME.'/.vim/dict/php.txt'
       \ }
+"}}}
 
-set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 "if has('gui_running')
   "source $VIMRUNTIME/mswin.vim
@@ -63,25 +149,52 @@ source $VIMRUNTIME/vimrc_example.vim
   "inoremap <C-S-Tab> <C-O><C-W>W
 "endif
 
-set autoindent
-"set nobackup
 set formatoptions+=mM
 set fileencodings=ucs-bom,utf-8,default,latin1          " default value
-"set grepprg=e:\gnuwin32\bin\grep\ -nH
-"set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
-set statusline=%{GitBranch()}%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
-set cursorline
-" set dictionary+=C:\Program\\\ Files\Vim\vimfiles\words
-" set tags+=C:\Program\\\ Files\Vim\vimfiles\systags      " help ft-c-omni
-set cst
-set csto=1
-setlocal tags+=/tags
-set cspc=3
-" set directory=~\Locals~1\Temp
-set path=.,
-        \,
 
-filetype plugin on
+" ---------------------------------------------------------------------------
+" status line
+set laststatus=2
+if has('statusline')
+      " Status line detail: (from Rafael Garcia-Suarez)
+      " %f              file path
+      " %y              file type between braces (if defined)
+      " %([%R%M]%)      read-only, modified and modifiable flags between braces
+      " %{'!'[&ff=='default_file_format']}
+      "                 shows a '!' if the file format is not the platform
+      "                 default
+      " %{'$'[!&list]}  shows a '*' if in list mode
+      " %{'~'[&pm=='']} shows a '~' if in patchmode
+      " (%{synIDattr(synID(line('.'),col('.'),0),'name')})
+      "                 only for debug : display the current syntax item name
+      " %=              right-align following items
+      " #%n             buffer number
+      " %l/%L,%c%V      line number, total number of lines, and column number
+
+      function! SetStatusLineStyle()
+            "let &stl="%f %y "                       .
+            "\"%([%R%M]%)"                   .
+            "\"%#StatusLineNC#%{&ff=='unix'?'':&ff.'\ format'}%*" .
+            "\"%{'$'[!&list]}"               .
+            "\"%{'~'[&pm=='']}"              .
+            "\"%="                           .
+            "\"#%n %l/%L,%c%V "              .
+            "\""
+            "      \"%#StatusLineNC#%{GitBranchInfoString()}%* " .
+            let &stl="%F%m%r%h%w\ [%{&ff}]\ [%Y]\ %P\ %=[a=\%03.3b]\ [h=\%02.2B]\ [%l,%v]"
+      endfunc
+      " Not using it at the moment, using a different one
+      call SetStatusLineStyle()
+
+      if has('title')
+            set titlestring=%t%(\ [%R%M]%)
+      endif
+
+      "highlight StatusLine    ctermfg=White ctermbg=DarkBlue cterm=bold
+      "highlight StatusLineNC  ctermfg=White ctermbg=DarkBlue cterm=NONE
+endif
+
+"set statusline=%{GitBranch()}%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 
 " Personal setting for working with Windows NT/2000/XP (requires tee in path)
 if &shell =~? 'cmd'
@@ -92,11 +205,6 @@ endif
 " Quote shell if it contains space and is not quoted
 if &shell =~? '^[^"].* .*[^"]'
   let &shell='"' . &shell . '"'
-endif
-
-" Set British spelling convention for International English
-if has('syntax')
-  set spelllang=en
 endif
 
 if has('eval')
@@ -231,148 +339,6 @@ if !has('gui_running')
   endif
 endif
 
-" Display window width and height in GUI
-if has('gui_running') && has('statusline')
-  let &statusline=substitute(
-                 \&statusline, '%=', '%=%{winwidth(0)}x%{winheight(0)}  ', '')
-  set laststatus=2
-endif
-
-" Set up language and font in GUI
-if has('gui_running') && has('multi_byte')
-  function! UTF8_East()
-    exec 'language messages ' . s:lang_east . '.UTF-8'
-    set ambiwidth=double
-    set encoding=utf-8
-    let s:utf8_east_mode=1
-  endfunction
-
-  function! UTF8_West()
-    exec 'language messages ' . s:lang_west . '.UTF-8'
-    set ambiwidth=single
-    set encoding=utf-8
-    let s:utf8_east_mode=0
-  endfunction
-
-  function! UTF8_SwitchMode()
-    if s:utf8_east_mode
-      call UTF8_West()
-      call UTF8_SetFont()
-    else
-      call UTF8_East()
-      call UTF8_SetFont()
-    endif
-  endfunction
-
-  function! UTF8_SetFont()
-    if &encoding != 'utf-8'
-      return
-    endif
-    if s:utf8_east_mode
-      if &fileencoding == 'cp936' ||
-            \&fileencoding == 'gbk' ||
-            \&fileencoding == 'euc-cn'
-        let s:font_east=s:font_schinese
-      elseif &fileencoding == 'cp950' ||
-            \&fileencoding == 'big5' ||
-            \&fileencoding == 'euc-tw'
-        let s:font_east=s:font_tchinese
-      endif
-      if &guifont != s:font_east
-        exec 'set guifont=' . s:font_east
-      endif
-    else
-      if &guifont != s:font_west
-        exec 'set guifont=' . s:font_west
-      endif
-    endif
-  endfunction
-
-  function! UTF8_CheckAndSetFont()
-    if (s:utf8_east_mode && &guifont == s:font_east) ||
-          \(!s:utf8_east_mode && &guifont == s:font_west)
-      call UTF8_SetFont()
-    endif
-  endfunction
-
-  " Rebuild the menu to make the translations display correctly
-  " --------------------------------------------------------------------
-  " Uncomment the following code if all of the following conditions
-  " hold:
-  "   1) Unicode support is wanted (enabled by default for gVim in this
-  "      _vimrc);
-  "   2) The libintl.dll shipped with gVim for Windows is not updated
-  "      with a new one that supports encoding conversion (see also
-  "      <URL:http://tinyurl.com/2hnwaq> for issues with this approach);
-  "   3) The environment variable LANG is not manually set to something
-  "      like "zh_CN.UTF-8", and the default language is not ASCII-based
-  "      (English).
-  " The reason why the code is not enabled by default is because it can
-  " interfere with the localization of menus created by plug-ins.
-  " --------------------------------------------------------------------
-  "
-  "if $LANG !~ '\.' && v:lang !~? '^\(C\|en\)\(_\|\.\|$\)'
-  "  runtime! delmenu.vim
-  "endif
-
-  " Fonts
-  let s:font_schinese='DejaVu\ Sans\ YuanTi\ Mono:h10.5:cDEFAULT'
-  let s:font_tchinese='MingLiU:h10.5:cDEFAULT'
-  if legacy_encoding == 'cp936'
-    let s:font_schinese='Monaco\ 10'              " Use the system default font
-    " let s:font_schinese='Monaco:h9:cDEFAULT'              " Use the system default font
-  elseif legacy_encoding == 'cp950'
-    let s:font_tchinese='Monaco\ 10'              " Use the system default font
-    " let s:font_tchinese='Monaco:h9:cDEFAULT'              " Use the system default font
-  endif
-  if legacy_encoding != 'cp950'
-    let s:font_east=s:font_schinese
-  else
-    let s:font_east=s:font_tchinese
-  endif
-  let s:font_west='Monaco\ 10'
-  " let s:font_west='Monaco:h9:cDEFAULT'
-
-  " Extract the current east/west language settings
-  if v:lang =~? '^\(zh\)\|\(ja\)\|\(ko\)'
-    let s:lang_east=matchstr(v:lang, '^[a-zA-Z_]*\ze\(\.\|$\)')
-    let s:lang_west='en'
-    let s:utf8_east_mode=1
-    if v:lang=~? '^zh_TW'
-      let s:font_east=s:font_tchinese
-    endif
-  else
-    let s:lang_east='zh_CN'
-    let s:lang_west=matchstr(v:lang, '^[a-zA-Z_]*\ze\(\.\|$\)')
-    let s:utf8_east_mode=0
-  endif
-
-  " Set a suitable GUI font and the ambiwidth option
-  if &encoding == 'utf-8'
-    if s:utf8_east_mode
-      call UTF8_East()
-    else
-      call UTF8_West()
-    endif
-  endif
-  if s:utf8_east_mode
-    exec 'set guifont=' . s:font_east
-  else
-    exec 'set guifont=' . s:font_west
-  endif
-
-  " Key mapping to switch the east/west UTF-8 mode
-  nmap <F8>      :call UTF8_SwitchMode()<CR>
-  imap <F8> <C-O>:call UTF8_SwitchMode()<CR>
-
-  if has('autocmd')
-    " Set the appropriate GUI font according to the fileencoding
-    au BufWinEnter *  call UTF8_SetFont()
-    " Not if user manually changed it (when switching between windows)
-    au WinEnter    *  call UTF8_CheckAndSetFont()
-  endif
-endif
-
 " Key mapping to toggle spelling check
 if has('syntax')
   nmap <silent> <F7>      :setlocal spell!<CR>
@@ -384,16 +350,6 @@ if has('syntax')
 endif
 
 if has('autocmd')
-  function! SetFileEncodings(encodings)
-    let b:my_fileencodings_bak=&fileencodings
-    let &fileencodings=a:encodings
-  endfunction
-
-  function! RestoreFileEncodings()
-    let &fileencodings=b:my_fileencodings_bak
-    unlet b:my_fileencodings_bak
-  endfunction
-
   function! GnuIndent()
     setlocal cinoptions=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+2,(0,u0,w1,m1
     setlocal shiftwidth=2
@@ -457,9 +413,6 @@ if has('autocmd')
   " <URL:http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/>
   " let doxygen_use_bitsream_vera=1
 
-  " Let TOhtml output <PRE> and style sheet
-  let html_use_css=1
-
   " Show syntax highlighting attributes of character under cursor (Vim
   " script #383)
   map <Leader>a :call SyntaxAttr()<CR>
@@ -512,10 +465,10 @@ if has('autocmd')
 let g:DokuVimKi_USER = 'yunt'
 
 " password
-let g:DokuVimKi_PASS = '23531760'
+let g:DokuVimKi_PASS = ''
 
 " url of the remote wiki (without trailing '/')
-let g:DokuVimKi_URL  = 'http://shangyunt.3322.org'
+let g:DokuVimKi_URL  = 'http://wiki.lazyhack.net'
 
 " set to yes if you want to be connected to your remote wiki every time you start vim
 let g:DokuVimKi_AUTOCONNECT = 'no'
@@ -566,3 +519,69 @@ function! CleanupBuffer(keep)
     " after clean spaces and tabs, jump back
     exec "normal " . lnum . "G"
 endfunction
+
+"{{{ 特定语言相关/插件
+    "{{{ php
+    "-------------------------------------------------------------------------------------
+        "{{{ main
+        "-------------------------------------------------------------------------------------
+        function! PHPsynCHK()
+            let winnum =winnr() " get current window number
+            silent make -l %
+            cw " open the error window if it contains error
+            " return to the window with cursor set on the line of the first error (if any)
+            execute winnum . "wincmd w"
+        endfunction
+
+        function! SetCscope()
+            if has("cscope")
+                "set csprg=/usr/local/bin/cscope
+                setl cscopequickfix=s-,c-,d-,i-,t-,e-
+                setl csto=1
+                setl cst
+                setl nocsverb
+                " add any database in current directory
+                if filereadable("cscope.out")
+                    cs add cscope.out
+                    " else add database pointed to by environment
+                elseif $CSCOPE_DB != ""
+                    cs add $CSCOPE_DB
+                endif
+                set csverb
+            endif
+
+        endfunction
+
+        function! SetPHP()
+            "call SetCscope()
+            :setl makeprg=php
+            :setl errorformat=%m\ in\ %f\ on\ line\ %l
+            ":setl dictionary=$VIMFILES/dict/php.dict
+            let b:match_debug = 1
+
+            " Map <CTRL>-P to check the file for syntax
+            :noremap <C-P> :call PHPsynCHK()<CR>
+            call TSkeletonMapGoToNextTag()
+            "AutoComplPopDisable
+        endfunction
+        autocmd FileType php :call SetPHP()
+        "----------------------------------------------------------------------------------}}}
+        "{{{ php.vim 语法文件
+        "-------------------------------------------------------------------------------------
+        let php_large_file = 3000
+        "let php_smart_members = 0
+        "let php_smart_semicolon = 0
+        "let php_show_pcre = 0
+        let php_folding=1                   " 使用代码折叠
+        let php_strict_blocks=1             "
+        let php_fold_arrays=1               " 折叠数组
+        let php_baselib=1                   " 高亮基础函数库
+        let php_sql_query = 1               " 高亮字符串中的SQL关键字
+        let php_htmlInStrings = 0           " 不高亮字符串中的HTML关键字
+        let php_alt_properties = 0          "
+        let php_highlight_quotes = 1
+        let PHP_autoformatcomment = 1       " 自动格式注释
+        let php_sync_method = -1
+        "let g:AutoComplPop_NotEnableAtStartup = 1
+        "----------------------------------------------------------------------------------}}}
+    "----------------------------------------------------------------------------------}}}
