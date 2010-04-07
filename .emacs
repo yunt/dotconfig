@@ -19,6 +19,7 @@
 ;;load-path就同bash中的$PATH相似，emacs所需要的Elisp包都得在load-path里的文件夹中
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
 (setq load-path (cons "~/.emacs.d/site-lisp" load-path))
+(setq load-path (cons "~/.emacs.d/site-lisp/auto-complete" load-path))
 ;;设置info的路径，也可通过Shell的全局变量$INFOPATH设置，我原来的22因为是自己编译的所以这里就注释了
 ;(add-to-list 'Info-default-directory-list "~/local/info/")
 ;;由菜单修改配置的东西将会保存在custom-file里，这里我设置他在我的elisp的集中营里
@@ -29,7 +30,7 @@
 (load "yunt-function")
 (load "yunt-basic")
 (load "yunt-viper")
-;(load "yunt-calendar")
+(load "yunt-calendar")
 (load "yunt-folding")
 (load "yunt-ibuffer")
 (load "yunt-ido")
@@ -41,10 +42,14 @@
 (load "yunt-dired")
 ;(load "yunt-mode")
 ;(load "yunt-wiki")
-(load "yunt-other-elisp")
 (load "yunt-language")
 (load "yunt-programe")
+(load "yunt-auto-complete.el")
+(load "yunt-php")
+;(load "yunt-python")
 (load "yunt-key-bindings")
+(load "yunt-erc")
+(load "yunt-other-elisp")
 
 ;;这个东西必须放在最后
 ;;desktop.el是一个可以保存你上次emacs关闭时的状态，下一次启动时恢复为上次关闭的状态。就和vmware的suspend一样。

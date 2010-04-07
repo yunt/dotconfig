@@ -1,5 +1,8 @@
 ;;; yunt-programe.el ---
 
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/company-mode")
+;(autoload 'company-mode "company" nil t)
+
 ;; 增加自定义关键字
 (dolist (mode '(c-mode c++-mode java-mode lisp-mode emacs-lisp-mode lisp-interaction-mode sh-mode
                        sgml-mode))
@@ -47,14 +50,16 @@
 (defun my-c-mode-cedet-hook ()
   (setq tab-width 4 indent-tabs-mode nil)
   (c-toggle-auto-hungry-state 1)
-;;  (c-set-style "gnu")
+  (c-set-style "gnu")
   (c-set-offset 'member-init-intro '++)
-  (font-lock-mode 2)
+  ;(font-lock-mode 2)
   (define-key c-mode-base-map "C-m" 'newline-and-indent)
-  (local-set-key "." 'semantic-complete-self-insert)
-  (local-set-key ">" 'semantic-complete-self-insert)
+  ;(local-set-key "." 'semantic-complete-self-insert)
+  ;(local-set-key ">" 'semantic-complete-self-insert)
   (define-key c-mode-base-map [(tab)] 'my-indent-or-complete)
   (define-key c-mode-base-map [(meta ?/)] 'semantic-ia-complete-symbol-menu))
+  ;(setq company-idle-delay t)
+  ;(company-mode))
 (add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
 
 ;;; yunt-programe.el ends here

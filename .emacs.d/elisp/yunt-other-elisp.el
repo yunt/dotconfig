@@ -36,6 +36,9 @@
 (require 'erc)                          ;IRC聊天
 (require 'erc-nicklist)
 (require 'erc-highlight-nicknames)      ;不同昵称的颜色
+(require 'erc-extension)                ;ERC的一些扩展
+(require 'erc-nick-notify)              ;ERC 消息提醒
+
 
 (provide 'yunt-yunt-other-elisp)
 

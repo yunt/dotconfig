@@ -1,144 +1,0 @@
-10
-
-dir
-823
-http://dea.googlecode.com/svn/trunk/snippets/text-mode
-http://dea.googlecode.com/svn
-
-
-
-2009-12-04T00:49:58.932668Z
-731
-ahei
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-b2947b2a-d337-11de-ba7e-09ca73f1295e
-
-emacs-lisp-mode
-dir
-
-f90-mode
-dir
-
-sql-mode
-dir
-
-mail
-file
-
-
-
-
-2010-01-13T20:25:13.541232Z
-b729c5447b78719313d18d6b7c82b873
-2009-11-09T09:48:18.826575Z
-565
-ahei
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-48
-
-perl-mode
-dir
-
-html-mode
-dir
-
-rst-mode
-dir
-
-erlang-mode
-dir
-
-time
-file
-
-
-
-
-2010-01-13T20:25:13.541232Z
-f0b9d06664e171627d8c87ea7a26b7c6
-2009-10-31T15:57:05.751144Z
-508
-ahei
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-51
-
-latex-mode
-dir
-
-nxml-mode
-dir
-
-ruby-mode
-dir
-
-python-mode
-dir
-
-snippet-mode
-dir
-
-markdown-mode
-dir
-
-scala-mode
-dir
-
-cc-mode
-dir
-
-css-mode
-dir
-

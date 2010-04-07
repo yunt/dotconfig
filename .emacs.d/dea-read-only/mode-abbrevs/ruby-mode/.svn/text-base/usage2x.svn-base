@@ -1,4 +1,0 @@
-def usage(appName)
-  puts("usage: #{appName}<field " [-h | -v]">")
-  exit(1)
-end

@@ -1,7 +1,7 @@
 " vim:expandtab shiftwidth=2 tabstop=8 textwidth=72
 
 " Wu Yongwei's _vimrc for Vim 7
-" Last Change: 2010-01-09 03:16:54
+" Last Change: 2010-04-07 19:44:36
 
 if v:version < 700
   echoerr 'This _vimrc requires Vim 7 or later.'
@@ -23,40 +23,53 @@ if has('multi_byte')
   let legacy_encoding=&encoding
 endif
 
+colors tango-desert
 if has('gui_running') && has('multi_byte')
   " Set encoding (and possibly fileencodings)
   if $LANG !~ '\.' || $LANG =~? '\.UTF-8$'
     set encoding=utf-8
   else
     let &encoding=matchstr($LANG, '\.\zs.*')
-    let &fileencodings='ucs-bom,utf-8,' . &encoding
+    let &fileencodings='gbk,ucs-bom,utf-8,' . &encoding
     let legacy_encoding=&encoding
   endif
   set guioptions=egtm
-  colors literal_tango
   set lines=40
   set columns=120
   set nu
 endif
 
+let g:NeoComplCache_EnableAtStartup = 1
+"let g:NeoComplCache_DictionaryFileTypeLists = {
+      "\ 'default' : '',
+      "\ 'vimshell' : $HOME.'/.vimshell_hist',
+      "\ 'scheme' : $HOME.'/.gosh_completions',
+      "\ 'scala' : $DOTVIM.'/dict/scala.dict',
+      "\ 'ruby' : $DOTVIM.'/dict/ruby.dict'
+      "\ }
+let g:NeoComplCache_DictionaryFileTypeLists = {
+      \ 'default' : '',
+      \ 'php' : $HOME.'/.vim/dict/php.txt'
+      \ }
+
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
-if has('gui_running')
-  source $VIMRUNTIME/mswin.vim
-  unmap  <C-Y>|             " <C-Y> for Redo is kept in insert mode
-  iunmap <C-A>|             " <C-A> for Select-All is kept in normal mode
-  " Key mapping to switch windows quickly (<C-Tab> is already mapped)
-  nnoremap <C-S-Tab> <C-W>W
-  inoremap <C-S-Tab> <C-O><C-W>W
-endif
+"if has('gui_running')
+  "source $VIMRUNTIME/mswin.vim
+  "unmap  <C-Y>|             " <C-Y> for Redo is kept in insert mode
+  "iunmap <C-A>|             " <C-A> for Select-All is kept in normal mode
+  "" Key mapping to switch windows quickly (<C-Tab> is already mapped)
+  "nnoremap <C-S-Tab> <C-W>W
+  "inoremap <C-S-Tab> <C-O><C-W>W
+"endif
 
 set autoindent
-set nobackup
+"set nobackup
 set formatoptions+=mM
 set fileencodings=ucs-bom,utf-8,default,latin1          " default value
-set grepprg=e:\gnuwin32\bin\grep\ -nH
+"set grepprg=e:\gnuwin32\bin\grep\ -nH
 "set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set statusline=%{GitBranch()}%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set cursorline
 " set dictionary+=C:\Program\\\ Files\Vim\vimfiles\words
 " set tags+=C:\Program\\\ Files\Vim\vimfiles\systags      " help ft-c-omni
@@ -303,19 +316,22 @@ if has('gui_running') && has('multi_byte')
   "endif
 
   " Fonts
-  let s:font_schinese='WenQuanYi Bitmap Song:h10.5:cDEFAULT'
+  let s:font_schinese='DejaVu\ Sans\ YuanTi\ Mono:h10.5:cDEFAULT'
   let s:font_tchinese='MingLiU:h10.5:cDEFAULT'
   if legacy_encoding == 'cp936'
-    let s:font_schinese='Monaco:h9:cDEFAULT'              " Use the system default font
+    let s:font_schinese='Monaco\ 10'              " Use the system default font
+    " let s:font_schinese='Monaco:h9:cDEFAULT'              " Use the system default font
   elseif legacy_encoding == 'cp950'
-    let s:font_tchinese='Monaco:h9:cDEFAULT'              " Use the system default font
+    let s:font_tchinese='Monaco\ 10'              " Use the system default font
+    " let s:font_tchinese='Monaco:h9:cDEFAULT'              " Use the system default font
   endif
   if legacy_encoding != 'cp950'
     let s:font_east=s:font_schinese
   else
     let s:font_east=s:font_tchinese
   endif
-  let s:font_west='Monaco:h9:cDEFAULT'
+  let s:font_west='Monaco\ 10'
+  " let s:font_west='Monaco:h9:cDEFAULT'
 
   " Extract the current east/west language settings
   if v:lang =~? '^\(zh\)\|\(ja\)\|\(ko\)'
@@ -458,7 +474,8 @@ if has('autocmd')
   au FileType cvs        setlocal textwidth=72
   au FileType html,xhtml setlocal indentexpr=
   au FileType mail       setlocal expandtab softtabstop=2 textwidth=70
-  autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+  au FileType python     set tabstop=4|set shiftwidth=4|set expandtab
+  au FileType php        source ~/.vim/myconf/yunt-php.vim
 
   " Detect file encoding based on file type
   au BufReadPre  *.gb               call SetFileEncodings('cp936')
@@ -470,8 +487,8 @@ if has('autocmd')
   au BufRead *.txt      if &buftype=='help'|nmap <buffer> q <C-W>c|endif
 
   " Setting for files following the GNU coding standard
-  au BufEnter D:/WuYongwei/cvssrc/socket++/*  call GnuIndent()
-  au BufEnter D:/mingw*             call GnuIndent()
+  "au BufEnter D:/WuYongwei/cvssrc/socket++/*  call GnuIndent()
+  "au BufEnter D:/mingw*             call GnuIndent()
 
   " Automatically update change time
   au BufWritePre *vimrc,*.vim       call UpdateLastChangeTime()

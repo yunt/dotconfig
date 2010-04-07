@@ -108,6 +108,20 @@
           )
 
     )
+   (semanticdb-table "patchlevel.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PATCHLEVEL" variable (:constant-flag t) nil [933 943]))          
+    :file "patchlevel.h"
+    :pointmax 946
+    :fsize 945
+    :lastmodtime '(11689 28545)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PATCHLEVEL" . ((number "8" 944 . 945)))
+          )
+
+    )
    )
   :file "!home!yunt!works!c!unclutter!semantic.cache"
   :semantic-tag-version "2.0pre7"

@@ -7,13 +7,13 @@
 ;;按p就可以把当前配色方案的lisp打印出来，加入你的.emacs，就可以不用加
 ;;载color-theme了，这样可以加快起动速度
 (require 'color-theme);;不用了,真慢，如果上网的话，这个就很慢了，所以我注释掉了
-;(load-file "/home/yunt/lib/emacs-lisp/color-theme-6.6.0/color-theme.el")
+;;(load-file "/home/yunt/lib/emacs-lisp/color-theme-6.6.0/color-theme.el")
 (color-theme-initialize)
-;;(color-theme-tty-dark)
-(color-theme-comidia)
+;;;(color-theme-tty-dark)
+;(color-theme-comidia)
 ;(color-theme-dark-laptop)
 ;(color-theme-arjen)
-;(color-theme-euphoria);;颜色很好
+(color-theme-euphoria);;颜色很好
 ;(color-theme-kingsajz)
 ;(color-theme-cooper-dark)
 ;(color-theme-oswald)
@@ -21,15 +21,30 @@
 ;( my-color-theme t )
 ;(color-theme-pok-wob)
 ;(color-theme-whateveryouwant);;字体设置的很好
+;(require 'LazyCatTheme)
+;(require 'yunt-theme)
+;( my-color-theme t )
 (require 'ahei-face)
 
 ;;中文字体设定－这里是一部分，还有.Xresources中也有
 ;; 我是近视眼，喜欢大字体。这个pixelsize大多数人是设成13吧。
 ;;(set-default-font "Monaco:pixelsize=13")
-(set-default-font "DejaVu Sans Mono:pixelsize=14")
+;(set-default-font "DejaVu Sans Mono-11")
   ;; 中文字体的设定，网上很多资料都是gb18030，但我的locale是UTF-8
-(set-fontset-font (frame-parameter nil 'font)
-  'unicode '("WenQuanYi Micro Hei Mono" . "unicode-bmp"))
+;(set-fontset-font (frame-parameter nil 'font)
+  ;'unicode '("WenQuanYi Micro Hei Mono-11" . "unicode-bmp"))
+
+;; daemon 模式启动字体设置
+;(add-hook 'window-setup-hook
+;	  (lambda nil
+;	    ;; font setting
+;	    ;(set-default-font "DejaVu Sans Mono:pixelsize=14")
+;	    (set-default-font "Monaco-10")
+;	    (set-fontset-font (frame-parameter nil 'font)
+;			      'unicode '("WenQuanYi Micro Hei Mono-10" . "unicode-bmp"))
+;	    ;; window positioning
+;	    (setq default-frame-alist '((top . 0) (left . 0) (width . 100) (height . 40)))
+;	    )) 
 
 ;;外观设置
 ;;去掉工具栏
@@ -151,7 +166,7 @@
 (line-number-mode t)
 ;;显示默认的文档的宽度，看起来比较舒服？
 ;;latex90分钟介绍里说66是最大限度,看来不错.
-;(setq default-fill-column 60)
+(setq default-fill-column 66)
 ;; 缩进设置
 ;不用 TAB 字符来indent, 这会引起很多奇怪的错误。编辑 Makefile 的时候也
 ;不用担心，因为 makefile-mode 会把 TAB 键设置成真正的 TAB 字符，并且加亮显示的。
@@ -250,6 +265,14 @@
 ;; 显示行号
 (load "displn-mode-settings")
 ;(load "maxframe-settings")
+;(require 'tabbar-extension)
+;; Tramp
+(require 'tramp)
+;; Htmlize
+(require 'htmlize)
+;;(setq htmlize-output-type "css")
+;;(setq htmlize-output-type "inline-css")
+(setq htmlize-output-type "font")
 
 (provide 'yunt-basic)
 

@@ -1,3 +1,0 @@
-PROGRAM_NAME=`basename "$0"`
-PROGRAM_VERSION=<field ""1.0"">
-<endpoint>

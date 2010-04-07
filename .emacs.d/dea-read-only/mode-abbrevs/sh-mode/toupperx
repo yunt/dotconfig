@@ -1,5 +1,0 @@
-# $@: ´ý×ª»»µÄ×Ö·û´®
-function toupper()
-{
-    echo "$@" | tr '[a-z]' '[A-Z]'
-}

@@ -1,11 +1,11 @@
 #命令提示符 {{{
 case "$TERM" in
         linux)
-RPROMPT=$(echo '%{\033[31m%}%D %T%{\033[m%}')
-PROMPT=$(echo '%{\033[34m%}%M%{\033[32m%}%/
-%{\033[36m%}%n%{\033[01;33m%} >>> %{\033[m%}')
+                RPROMPT=$(echo '%{\033[31m%}%D %T%{\033[m%}')
+                PROMPT=$(echo '%{\033[34m%}%M%{\033[32m%}%/
+                        %{\033[36m%}%n%{\033[01;33m%} >>> %{\033[m%}')
                 ;;
-        screen|rxvt*|xterm*|sun)
+        screen*|rxvt*|xterm*|sun)
                 . ~/.zshprompt
                 setprompt
                 ;;
@@ -215,7 +215,7 @@ alias ntp='sudo ntpdate pool.ntp.org && sudo hwclock --systohc'
 alias gae='/opt/google-appengine/appcfg.py'
 alias gaetest='/opt/google-appengine/dev_appserver.py'
 alias winxp-snap='VBoxManage snapshot winxp restore xp-snap'
-alias winxp='VBoxSDL --startvm winxp --nofstoggle --noresize --evdevkeymap'
+alias winxp='sudo modprobe vboxnetflt && VBoxSDL --startvm winxp --nofstoggle --noresize --evdevkeymap && sudo rmmod vboxnetflt vboxdrv'
 alias vless='vim -u /usr/share/vim/vim72/macros/less.vim'
 alias emacs='env LC_CTYPE=zh_CN.UTF-8 emacs'
 
@@ -276,9 +276,9 @@ case "$TERM" in
                 bindkey '\eOc' forward-word             # ctrl cursor right
                 bindkey '\eOd' backward-word            # ctrl cursor left
                 #bindkey '\e[3~' backward-delete-char    # This should not be necessary!
-                function sctitle() { print -Pn "\ek$1\e\\"}
-                function precmd() { sctitle "%20< ..<%~%<<" }
-                function preexec() { sctitle "%20>..>$1%< <" }
+                #function sctitle() { print -Pn "\ek$1\e\\"}
+                #function precmd() { sctitle "%20< ..<%~%<<" }
+                #function preexec() { sctitle "%20>..>$1%< <" }
 
                 ;;
         rxvt*)
@@ -305,5 +305,42 @@ case "$TERM" in
 esac
 #}}}
 
+# ---Fix Title {{{
+#screen integration to set caption bar dynamically
+function title {
+if [[ $TERM == "screen" || $TERM == "screen-256color-bce" || $TERM == "screen-bce" || $TERM == "screen.linux" ]]; then
+    # Use these two for GNU Screen:
+    print -nR $'\033k'$1$'\033'\\\
+
+    print -nR $'\033]0;'$2$'\a'
+elif [[ $TERM == "xterm" || $TERM == "urxvt" ]]; then
+    # Use this one instead for XTerms:
+    print -nR $'\033]0;'$*$'\a'
+    #trap 'echo -ne "\e]0;$USER@$HOSTNAME: $BASH_COMMAND\007"' DEBUG
+fi
+}
+
+#set screen title if not connected remotely
+function precmd {
+    title "`print -Pn "%~" | sed "s:\([~/][^/]*\)/.*/:\1...:"`" "$TERM $PWD"
+    echo -ne '\033[?17;0;127c'
+}
+
+function preexec {
+    emulate -L zsh
+    local -a cmd; cmd=(${(z)1})
+    if [[ $cmd[1]:t == "ssh" ]]; then
+        title "@"$cmd[2] "$TERM $cmd"
+    elif [[ $cmd[1]:t == "sudo" ]]; then
+        title "#"$cmd[2]:t "$TERM $cmd[3,-1]"
+    elif [[ $cmd[1]:t == "for" ]]; then
+        title "()"$cmd[7] "$TERM $cmd"
+    elif [[ $cmd[1]:t == "svn" ]]; then
+        title "$cmd[1,2]" "$TERM $cmd"
+    else
+        title $cmd[1]:t "$TERM $cmd[2,-1]"
+    fi
+}
+#}}}
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4

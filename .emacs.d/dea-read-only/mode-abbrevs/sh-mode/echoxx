@@ -1,1 +1,0 @@
-echoWithType <field "content"> <choose><choice ""info""><choice ""warn""><choice ""err""></choose>

@@ -24,12 +24,12 @@
             ("setq-default" code nil nil [1309 1337])
             ("setq" code nil nil [1338 1361])
             ("load" code nil nil [1375 1403])
-            ("my-c-mode-cedet-hook" function nil nil [1451 1944])
-            ("add-hook" code nil nil [1945 1997]))          
+            ("my-c-mode-cedet-hook" function nil nil [1451 1945])
+            ("add-hook" code nil nil [1946 1998]))          
     :file "yunt-programe.el"
-    :pointmax 2030
-    :fsize 2105
-    :lastmodtime '(19283 21177)
+    :pointmax 2031
+    :fsize 2259
+    :lastmodtime '(19336 4565)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "yunt-viper.el"
@@ -149,8 +149,8 @@
             ("init-gnus" package nil nil [5291 5311]))          
     :file "init-gnus.el"
     :pointmax 5340
-    :fsize 6454
-    :lastmodtime '(19286 4991)
+    :fsize 6475
+    :lastmodtime '(19288 40330)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "yunt-basic.el"
@@ -253,8 +253,8 @@
             ("yunt-basic" package nil nil [7336 7357]))          
     :file "yunt-basic.el"
     :pointmax 7387
-    :fsize 10648
-    :lastmodtime '(19286 8072)
+    :fsize 11354
+    :lastmodtime '(19334 45039)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "yunt-key-bindings.el"
@@ -416,8 +416,8 @@
             ("define-key" code nil nil [1686 1764]))          
     :file "yunt-gnus.el"
     :pointmax 1765
-    :fsize 1828
-    :lastmodtime '(19284 38607)
+    :fsize 2852
+    :lastmodtime '(19288 40697)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "yunt-other-elisp.el"
@@ -502,8 +502,8 @@
             ("yunt-yunt-other-elisp" package nil nil [1391 1423]))          
     :file "yunt-other-elisp.el"
     :pointmax 1459
-    :fsize 1625
-    :lastmodtime '(19286 3443)
+    :fsize 1744
+    :lastmodtime '(19288 41018)
     :unmatched-syntax 'nil
     )
    (semanticdb-table ".emacs"
@@ -558,6 +558,195 @@
     :pointmax 907
     :fsize 906
     :lastmodtime '(19285 45346)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-auto-complete.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("auto-complete" include nil nil [67 91])
+            ("auto-complete-config" include nil nil [92 123])
+            ("ac-dabbrev" include nil nil [124 145])
+            ("ac-anything" include nil nil [146 168])
+            ("ac-cake" include nil nil [169 187])
+            ("auto-complete-emacs-lisp" include nil nil [188 223])
+            ("global-auto-complete-mode" code nil nil [225 254])
+            ("setq" code nil nil [283 307])
+            ("setq" code nil nil [309 331])
+            ("setq" code nil nil [333 646])
+            ("add-hook" code nil nil [666 900])
+            ("add-hook" code nil nil [913 1441])
+            ("add-hook" code nil nil [1454 1692])
+            ("add-hook" code nil nil [1707 2079])
+            ("add-hook" code nil nil [2093 2322])
+            ("add-hook" code nil nil [2336 2623])
+            ("define-key" code nil nil [2641 2713])
+            ("setq" code nil nil [2715 2759])
+            ("ac-next-or-next-line" function (:arguments ("arg")) nil [2815 2973])
+            ("ac-previous-or-previous-line" function (:arguments ("arg")) nil [2974 3148])
+            ("define-key" code nil nil [3149 3219])
+            ("define-key" code nil nil [3220 3282])
+            ("define-key" code nil nil [3283 3345])
+            ("define-key" code nil nil [3346 3414])
+            ("yunt-auto-complete" package nil nil [3469 3498]))          
+    :file "yunt-auto-complete.el"
+    :pointmax 3499
+    :fsize 3498
+    :lastmodtime '(19336 2779)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-erc.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("setq" code nil nil [1 27])
+            ("setq" code nil nil [77 105])
+            ("setq" code nil nil [162 188])
+            ("setq" code nil nil [242 276])
+            ("setq" code nil nil [322 343])
+            ("setq" code nil nil [558 589])
+            ("setq" code nil nil [634 660])
+            ("setq" code nil nil [710 747])
+            ("setq" code nil nil [790 830])
+            ("setq" code nil nil [869 916])
+            ("setq" code nil nil [950 1014])
+            ("setq" code nil nil [1034 1103])
+            ("setq" code nil nil [1120 1160])
+            ("setq" code nil nil [1208 1237])
+            ("setq" code nil nil [1284 1307])
+            ("setq" code nil nil [1362 1470])
+            ("add-hook" code nil nil [1471 1562])
+            ("setq" code nil nil [1563 2621])
+            ("setq" code nil nil [2622 2876])
+            ("init-erc" package nil nil [2878 2897]))          
+    :file "yunt-erc.el"
+    :pointmax 2899
+    :fsize 3350
+    :lastmodtime '(19288 42733)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-theme.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("color-theme" include nil nil [23 45])
+            ("my-color-theme" function (:user-visible-flag t) nil [47 46143])
+            ("add-to-list" code nil nil [46144 46215])
+            ("yunt-theme" package nil nil [46217 46238]))          
+    :file "yunt-theme.el"
+    :pointmax 46239
+    :fsize 46238
+    :lastmodtime '(19288 41957)
+    :unmatched-syntax '((close-paren 45 . 46) (symbol 2 . 19) (open-paren 1 . 2))
+    )
+   (semanticdb-table "yunt-dired.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("setq" code nil nil [73 109])
+            ("setq" code nil nil [210 241])
+            ("setq" code nil nil [242 274])
+            ("setq" code nil nil [289 322])
+            ("add-hook" code nil nil [443 2763])
+            ("yunt-dired" package nil nil [2765 2786]))          
+    :file "yunt-dired.el"
+    :pointmax 2816
+    :fsize 3495
+    :lastmodtime '(19286 18078)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-auto-complete.el_backup"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("auto-complete" include nil nil [77 101])
+            ("auto-complete-config" include nil nil [102 133])
+            ("auto-complete-yasnippet" include nil nil [134 168])
+            ("auto-complete-c" include nil nil [169 195])
+            ("auto-complete-etags" include nil nil [196 226])
+            ("auto-complete-extension" include nil nil [227 261])
+            ("auto-complete-octave" include nil nil [262 293])
+            ("auto-complete-verilog" include nil nil [294 326])
+            ("ac-anything" include nil nil [327 349])
+            ("rcodetools" include nil nil [350 371])
+            ("auto-complete+" include nil nil [372 397])
+            ("javascript-mode" include (:directory "javascript") nil [398 437])
+            ("js2-mode" include nil nil [438 457])
+            ("css-mode" include nil nil [458 477])
+            ("global-auto-complete-mode" code nil nil [586 615])
+            ("apply-define-key" code nil nil [727 928])
+            ("setq" code nil nil [930 946])
+            ("setq" code nil nil [947 981])
+            ("setq" code nil nil [982 1030])
+            ("set-default" code nil nil [1032 1356])
+            ("setq" code nil nil [1357 1382])
+            ("setq" code nil nil [1384 1578])
+            ("ac-settings-4-lisp" function nil nil [1580 2159])
+            ("ac-settings-4-java" function nil nil [2161 2598])
+            ("ac-settings-4-c" function nil nil [2600 3034])
+            ("ac-settings-4-cpp" function nil nil [3036 3565])
+            ("ac-settings-4-text" function nil nil [3567 3877])
+            ("ac-settings-4-eshell" function nil nil [3879 4319])
+            ("ac-settings-4-ruby" function nil nil [4321 4518])
+            ("ac-settings-4-html" function nil nil [4520 4804])
+            ("dolist" code nil nil [4806 4998])
+            ("apply-args-list-to-fun" code nil nil [5000 5377])
+            ("dolist" code nil nil [5379 5612])
+            ("auto-complete-settings" package nil nil [5614 5647]))          
+    :file "yunt-auto-complete.el_backup"
+    :pointmax 5648
+    :fsize 5764
+    :lastmodtime '(19292 4455)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-calendar.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("setq" code nil nil [97 127])
+            ("setq" code nil nil [128 160])
+            ("setq" code nil nil [172 211])
+            ("setq" code nil nil [238 280])
+            ("setq" code nil nil [294 326])
+            ("setq" code nil nil [408 437])
+            ("setq" code nil nil [438 464])
+            ("setq" code nil nil [465 492])
+            ("setq" code nil nil [578 1036])
+            ("setq" code nil nil [1083 1124])
+            ("setq" code nil nil [1253 1287])
+            ("setq" code nil nil [1312 1353])
+            ("setq" code nil nil [1476 1558])
+            ("setq" code nil nil [1559 1653])
+            ("yunt-calendar" package nil nil [1655 1679]))          
+    :file "yunt-calendar.el"
+    :pointmax 1712
+    :fsize 2557
+    :lastmodtime '(19306 53648)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-python.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("load-library" code nil nil [598 621])
+            ("python-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [624 678])
+            ("add-to-list" code nil nil [679 737])
+            ("yunt-python" package nil nil [740 762]))          
+    :file "yunt-python.el"
+    :pointmax 764
+    :fsize 763
+    :lastmodtime '(19337 18966)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yunt-php.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("php-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [27 75])
+            ("setq" code nil nil [76 157])
+            ("yunt-php" package nil nil [159 178]))          
+    :file "yunt-php.el"
+    :pointmax 206
+    :fsize 213
+    :lastmodtime '(19330 37578)
     :unmatched-syntax 'nil
     )
    )

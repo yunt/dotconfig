@@ -53,3 +53,33 @@
 ;; Keymaps
 (define-key gnus-summary-mode-map (kbd "Backspace") 
 	'gnus-summary-prev-page)
+
+;; gnus-extension.el
+(defvar gnus-summary-sort-method nil
+  "The sort method by nus-summary-sort'.")
+
+(defvar gnus-summary-sort-order t
+  "The sort order by nus-summary-sort-by-reverse'.")
+
+(defadvice gnus-summary-sort (around get-sort-method activate)
+  "Get sort method by nus-summary-sort'."
+  (setq gnus-summary-sort-method (or (ad-get-arg 0) ""))
+  ad-do-it)
+
+(defun gnus-summary-sort-by-reverse ()
+  "Sort the summary buffer by reverse order.
+And keep current sort method."
+  (interactive)
+  (when (and gnus-summary-sort-method
+             (not (equal gnus-summary-sort-method "")))
+    (gnus-summary-sort (format "%s" gnus-summary-sort-method) gnus-summary-sort-order)
+    (setq gnus-summary-sort-order (not gnus-summary-sort-order))))
+
+(add-hook 'gnus-summary-exit-hook '(lambda () (setq gnus-summary-sort-order t)))
+
+(defun gnus-group-read-group-no-prompt ()
+  "Read news in this newsgroup and don't prompt.
+Use the value of nus-large-newsgroup'."
+  (interactive)
+  (gnus-group-read-group gnus-large-newsgroup))
+

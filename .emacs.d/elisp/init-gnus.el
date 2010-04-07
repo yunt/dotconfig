@@ -73,6 +73,7 @@
                    "X-Mailer:" "Reply-To:" "X-Spam:" "X-Spam-Status:" "X-Now-Playing"
                    "X-Attachments" "X-Diagnostic")
                  "\\|"))
+(require 'supercite)
 ;; 用 Supercite 显示多种多样的引文形式
 (setq sc-attrib-selection-list nil
       sc-auto-fill-region-p nil
