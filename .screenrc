@@ -1,0 +1,50 @@
+startup_message off
+
+# replace Ctrl-A by `
+escape ``
+
+# Bindings
+# # Remove silly bindings
+bind ^k
+bind L
+bind ^\
+
+# Settings
+vbell off
+defbce "on"
+attrcolor b ".I"
+# set a big scrolling buffer
+defscrollback 5000
+
+altscreen on 
+
+# Show statusline
+hardstatus on
+
+# Enable 256 colors
+term screen-256color
+
+# Don't show annoying bell messages
+bell_msg ""
+
+# Statusline
+hardstatus ignore '%{= G}[%{B} %M %d %{g}]%{g}[%= %{= w}%?%-Lw%?%{r}(%{W}%n*%f %t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{W} %c%{g} ]'
+activity '-'
+
+# Termcap, fix 256 colors
+termcapinfo rxvt 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' 
+termcapinfo rxvt-unicode 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' 
+termcapinfo rxvt-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' 
+
+# Easy X-clipboard copy
+bindkey -m > eval "stuff ' '" writebuf "exec zsh -c 'xsel < /tmp/screen-exchange'"
+
+# Set the caption on the bottom line
+caption always '%{= kg}[%{G}%H%{g}][%= %{= kw}%?%-Lw%?%{+b r}(%{y}%n %t%?(%u)%?%{r})%{= w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+# %{= kG} first set default color (=), back ground black (k), foreground green (G)
+# [%{G}%H%{g}] color bright green, host name (%H), color green
+# [%= ...] padding (%=), window left to the current focus window if exists,
+#      (current focus window with color yellow), window to the right of the
+#      focus window
+# [%{B} %m/%d %{W}%c %{g}] color bright blue, month/date (%m%d), color bright white,
+#      current time(%c), color green
