@@ -1,6 +1,7 @@
 # Auto-written by gtk2_prefs. Do not edit.
 
-gtk-theme-name = "Lucid X"
+gtk-theme-name = "A-New-Hope"
+gtk-icon-theme-name="Tango"
 style "user-font"
 {
 	font_name="DejaVu Sans YuanTi 9"

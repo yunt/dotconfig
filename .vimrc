@@ -1,16 +1,59 @@
-" vim:expandtab shiftwidth=2 tabstop=8 textwidth=72
+" vim:expandtab shiftwidth=2 tabstop=4 textwidth=72
 
-" Wu Yongwei's _vimrc for Vim 7
-" Last Change: 2010-04-07 21:51:20
+" Yunt's _vimrc for Vim 7
+" Last Change: 2012-07-04 23:59:57
 
 " first the disabled features due to security concerns
 set modelines=0                  " no modelines [http://www.guninski.com/vim1.html]
 let g:secure_modelines_verbose=0 " securemodelines vimscript
 let g:secure_modelines_modelines = 15 " 15 available modelines
 
+" Configure bundles:
+" ---------------------------------------------------------------------------
+set nocompatible               " be iMproved
+ filetype off                   " required!
+
+ set rtp+=~/.vim/bundle/vundle/
+ call vundle#rc()
+
+ " let Vundle manage Vundle
+ " required!
+ Bundle 'gmarik/vundle'
+
+ " My Bundles here:
+ "
+ " original repos on github
+ Bundle 'Shougo/neocomplcache'
+ Bundle 'mattn/zencoding-vim'
+ Bundle 'kevinw/pyflakes-vim'
+ Bundle 'tpope/vim-surround'
+ Bundle 'scrooloose/nerdcommenter'
+ Bundle 'scrooloose/nerdtree'
+ Bundle 'Lokaltog/vim-powerline'
+ " vim-scripts repos
+ Bundle 'c.vim'
+ Bundle 'taglist.vim'
+ Bundle 'FencView.vim'
+ Bundle 'Conque-Shell'
+ " non github repos
+ Bundle 'git://git.wincent.com/command-t.git'
+ " ...
+ " colors
+ Bundle 'nanotech/jellybeans.vim'
+
+ filetype plugin indent on     " required!
+ "
+ " Brief help
+ " :BundleList          - list configured bundles
+ " :BundleInstall(!)    - install(update) bundles
+ " :BundleSearch(!) foo - search(or refresh cache first) for foo
+ " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+ "
+ " see :h vundle for more details or wiki for FAQ
+ " NOTE: comments after Bundle command are not allowed..
+
 " ---------------------------------------------------------------------------
 " operational settings
-syntax on
 set ruler                     " show the line number on the bar
 set more                      " use more prompt
 set autoread                  " watch for file changes
@@ -46,6 +89,7 @@ set wildmode=longest:full     " *wild* mode
 set wildignore+=*.o,*~,.lo    " ignore object files
 set wildmenu                  " menu has tab completion
 let maplocalleader=','        " all my macros start with ,
+let mapleader=','
 " Deprecated, using SimpleFold with '\f' now. ,sf to revert
 "set foldmethod=syntax         " fold on syntax automagically, always
 "set foldcolumn=2              " 2 lines of column for fold showing, always
@@ -54,19 +98,131 @@ set magic                     " Enable the "magic"
 set visualbell t_vb=          " Disable ALL bells
 set cursorline                " show the cursor line
 set matchpairs+=<:>           " add < and > to match pairs
+set fillchars+=stl:\ ,stlnc:\
 set tags=tags;/               " search recursively up for tags
 set helplang=cn
-set fencs=ucs-bom,utf-8,chinese
+set fileencodings=ucs-bom,utf-8,chinese,default,latin1
+set formatoptions+=mM
 set encoding=utf-8
+set backupdir=$HOME/.vim/backup     " Set backup directory
+set directory=$HOME/.vim/swap,/tmp  " Set swap file directory
 
 " highlight over 80 columns
-"highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
-highlight OverLength cterm=reverse
-match OverLength /\%81v.*/
+" highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+" highlight OverLength cterm=reverse
+" match OverLength /\%81v.*/
 
+command W w !sudo tee % > /dev/null
+syntax on
 if has('autocmd')
-  " Remove ALL autocommands for the current group
-  au!
+      " Remove ALL autocommands for the current group
+      au!
+
+      " Keep more backups for one file
+      autocmd BufWritePre * let &backupext = strftime(".%m-%d-%H-%M")
+
+      function! GnuIndent()
+            setlocal cinoptions=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+2,(0,u0,w1,m1
+            setlocal shiftwidth=2
+            setlocal tabstop=8
+      endfunction
+
+      function! UpdateLastChangeTime()
+            let last_change_anchor='\(" Last Change:\s\+\)\d\{4}-\d\{2}-\d\{2} \d\{2}:\d\{2}:\d\{2}'
+            let last_change_line=search('\%^\_.\{-}\(^\zs' . last_change_anchor . '\)', 'n')
+            if last_change_line != 0
+                  let last_change_time=strftime('%Y-%m-%d %H:%M:%S', localtime())
+                  let last_change_text=substitute(getline(last_change_line), '^' . last_change_anchor, '\1', '') . last_change_time
+                  call setline(last_change_line, last_change_text)
+            endif
+      endfunction
+
+      function! RemoveTrailingSpace()
+            if $VIM_HATE_SPACE_ERRORS != '0' &&
+                              \(&filetype == 'c' || &filetype == 'cpp' || &filetype == 'vim')
+                  normal m`
+                  silent! :%s/\s\+$//e
+                  normal ``
+            endif
+      endfunction
+
+      if has('multi_byte')
+            " Legacy encoding is the system default encoding
+            let legacy_encoding=&encoding
+      endif
+      " Set default file encoding(s) to the legacy encoding
+      exec 'set fileencoding=' . legacy_encoding
+      let &fileencodings=substitute(
+                        \&fileencodings, '\<default\>', legacy_encoding, '')
+
+      " Use the legacy encoding for CVS in cvsmenu (Vim script #1245)
+      let CVScmdencoding=legacy_encoding
+      " but the encoding of files in CVS is still UTF-8
+      let CVSfileencoding='utf-8'
+
+      " File patterns for automatic encoding detection (Vim script #1708)
+      let $FENCVIEW_TELLENC='tellenc'       " See <URL:http://wyw.dcweb.cn/>
+      let fencview_auto_patterns='*.txt,*.tex,*.htm{l\=},*.asp'
+      let fencview_html_filetypes='html,aspvbs'
+
+      " File types to use function echoing (Vim script #1735)
+      let EchoFuncTagsLanguages=['c', 'cpp']
+
+      " Do not use menu for NERD Commenter
+      let NERDMenuMode=0
+
+      " Highlight space errors in C/C++ source files (Vim tip #935)
+      if $VIM_HATE_SPACE_ERRORS != '0'
+            let c_space_errors=1
+      endif
+
+      " Tune for C highlighting
+      let c_gnu=1
+      let c_no_curly_error=1
+
+      " Load doxygen syntax file for c/cpp/idl files
+      let load_doxygen_syntax=1
+
+      " Use Bitstream Vera Sans Mono as special code font in doxygen, which
+      " is available at
+      " <URL:http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/>
+      " let doxygen_use_bitsream_vera=1
+
+      " Show syntax highlighting attributes of character under cursor (Vim
+      " script #383)
+      map <Leader>a :call SyntaxAttr()<CR>
+
+      " Automatically find scripts in the autoload directory
+      au FuncUndefined Syn* exec 'runtime autoload/' . expand('<afile>') . '.vim'
+
+      " File type related autosetting
+      au FileType c,cpp      setlocal cinoptions=:0,g0,(0,w1 shiftwidth=4 tabstop=4
+      au FileType diff       setlocal shiftwidth=4 tabstop=4
+      au FileType changelog  setlocal textwidth=76
+      au FileType cvs        setlocal textwidth=72
+      au FileType html,xhtml setlocal indentexpr=
+      au FileType mail       setlocal expandtab softtabstop=2 textwidth=70
+      au FileType python     set tabstop=4|set shiftwidth=4|set expandtab
+      au FileType php        source ~/.vim/myconf/yunt-php.vim
+
+      " Detect file encoding based on file type
+      au BufReadPre  *.gb               call SetFileEncodings('cp936')
+      au BufReadPre  *.big5             call SetFileEncodings('cp950')
+      au BufReadPre  *.nfo              call SetFileEncodings('cp437')
+      au BufReadPost *.gb,*.big5,*.nfo  call RestoreFileEncodings()
+
+      " Quickly exiting help files
+      au BufRead *.txt      if &buftype=='help'|nmap <buffer> q <C-W>c|endif
+
+      " Setting for files following the GNU coding standard
+      "au BufEnter D:/WuYongwei/cvssrc/socket++/*  call GnuIndent()
+      "au BufEnter D:/mingw*             call GnuIndent()
+
+      " Automatically update change time
+      au BufWritePre *vimrc,*.vim       call UpdateLastChangeTime()
+
+      " Remove trailing spaces for C/C++ and Vim files
+      au BufWritePre *                  call RemoveTrailingSpace()
 endif
 
 if !has("gui_running")
@@ -77,12 +233,36 @@ if !has("gui_running")
       " (http://www.culater.net/software/TerminalColors/TerminalColors.php)
       " to change the really hard-to-read dark blue into a lighter shade.
       " Or; Use iterm with Tango colors
-      colorscheme desert256
+      "colorscheme desert256
+      colorscheme jellybeans
       "colorscheme rdark
+
+      " English messages only
+      " language messages en
+
+      " Do not increase the windows width in taglist
+      let Tlist_Inc_Winwidth=0
+
+      " Set text-mode menu
+      if has('wildmenu')
+            set wildmenu
+            set cpoptions-=<
+            set wildcharm=<C-Z>
+            nmap <F10>      :emenu <C-Z>
+            imap <F10> <C-O>:emenu <C-Z>
+      endif
+
+      " Change encoding according to the current console code page
+      if &termencoding != '' && &termencoding != &encoding
+            let &encoding=&termencoding
+            let &fileencodings='ucs-bom,utf-8,' . &encoding
+      endif
 end
+
 if has("gui_running")
       "colorscheme rdark
-      colorscheme tango-desert
+      colorscheme jellybeans
+      "colorscheme tango-desert
       let rdark_current_line=1  " highlight current line
       set background=dark
       set noantialias
@@ -94,107 +274,121 @@ if has("gui_running")
       set lines=64
       set columns=135
       "set transparency=0
-      set gfn=Monaco\ 10
+      set guifont=Monaco\ for\ Powerline\ 10
       set clipboard=unnamed
       let do_syntax_sel_menu=1 " Always show file types in menu
 end
 
-if has('multi_byte')
-  " Legacy encoding is the system default encoding
-  let legacy_encoding=&encoding
-endif
 
-"{{{插件设置
-" Settings for NERD_Tree
-let NERDTreeWinPos="left"
-let NERDTreeWinSize=35
+"{{{ 插件设置
+  " Settings for Eclim
+  let g:EclimHome = '/usr/share/vim/vimfiles/eclim'
+  let g:EclimEclipseHome = '/usr/share/eclipse'
 
-" Settings for taglist.vim
-let Tlist_Use_Right_Window=1
-let Tlist_Auto_Open=0
-let Tlist_Enable_Fold_Column=0
-let Tlist_Show_One_File = 1         " Only show tags for current buffer
-let Tlist_Compact_Format=0
-let Tlist_WinWidth=28
-let Tlist_Exit_OnlyWindow=1
-let Tlist_File_Fold_Auto_Close = 1
+  " Settings for NERD_Tree
+  let NERDTreeWinPos="left"
+  let NERDTreeWinSize=35
 
-" Settings for :TOhtml
-let html_number_lines=1
-let html_use_css=1
-let use_xhtml=1
+  " Settings for taglist.vim
+  let Tlist_Use_Right_Window=1
+  let Tlist_Auto_Open=0
+  let Tlist_Enable_Fold_Column=0
+  let Tlist_Show_One_File = 1         " Only show tags for current buffer
+  let Tlist_Compact_Format=0
+  let Tlist_WinWidth=28
+  let Tlist_Exit_OnlyWindow=1
+  let Tlist_File_Fold_Auto_Close = 1
 
-" Settings for NeoComplCahce
-let g:NeoComplCache_EnableAtStartup = 1
-"let g:NeoComplCache_DictionaryFileTypeLists = {
-      "\ 'default' : '',
-      "\ 'vimshell' : $HOME.'/.vimshell_hist',
-      "\ 'scheme' : $HOME.'/.gosh_completions',
-      "\ 'scala' : $DOTVIM.'/dict/scala.dict',
-      "\ 'ruby' : $DOTVIM.'/dict/ruby.dict'
-      "\ }
-let g:NeoComplCache_DictionaryFileTypeLists = {
-      \ 'default' : '',
-      \ 'php' : $HOME.'/.vim/dict/php.txt'
-      \ }
+  " Settings for :TOhtml
+  let html_number_lines=1
+  let html_use_css=1
+  let use_xhtml=1
+
+  " {{{ Settings for NeoComplCahce
+    " Disable AutoComplPop.
+	let g:acp_enableAtStartup = 0
+	" Use neocomplcache.
+	let g:neocomplcache_enable_at_startup = 1
+	" Use smartcase.
+	let g:neocomplcache_enable_smart_case = 1
+	" Use camel case completion.
+	let g:neocomplcache_enable_camel_case_completion = 1
+	" Use underbar completion.
+	let g:neocomplcache_enable_underbar_completion = 1
+	" Set minimum syntax keyword length.
+	let g:neocomplcache_min_syntax_length = 3
+	let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+	" Define dictionary.
+	let g:neocomplcache_dictionary_filetype_lists = {
+	      \ 'default' : '',
+	      \ 'php' : $HOME.'/.vim/dict/php.txt'
+	      \ }
+
+	" Define keyword.
+	if !exists('g:neocomplcache_keyword_patterns')
+	  let g:neocomplcache_keyword_patterns = {}
+	endif
+	let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
+
+	" Plugin key-mappings.
+	imap <C-k>     <Plug>(neocomplcache_snippets_expand)
+	smap <C-k>     <Plug>(neocomplcache_snippets_expand)
+	inoremap <expr><C-g>     neocomplcache#undo_completion()
+	inoremap <expr><C-l>     neocomplcache#complete_common_string()
+
+	" SuperTab like snippets behavior.
+	"imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+
+	" Recommended key-mappings.
+	" <CR>: close popup and save indent.
+	inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
+	" <TAB>: completion.
+	inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+	" <C-h>, <BS>: close popup and delete backword char.
+	inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+	inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+	inoremap <expr><C-y>  neocomplcache#close_popup()
+	inoremap <expr><C-e>  neocomplcache#cancel_popup()
+
+	" AutoComplPop like behavior.
+	"let g:neocomplcache_enable_auto_select = 1
+
+	" Shell like behavior(not recommended).
+	"set completeopt+=longest
+	"let g:neocomplcache_enable_auto_select = 1
+	"let g:neocomplcache_disable_auto_complete = 1
+	"inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<TAB>"
+	"inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
+
+	" Enable omni completion.
+	autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+	autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+	autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+	autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+	autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+	" Enable heavy omni completion.
+	if !exists('g:neocomplcache_omni_patterns')
+	  let g:neocomplcache_omni_patterns = {}
+	endif
+	let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
+	"autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
+	let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+	let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
+	let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
+      "}}}
 "}}}
-
-source $VIMRUNTIME/vimrc_example.vim
-"if has('gui_running')
-  "source $VIMRUNTIME/mswin.vim
-  "unmap  <C-Y>|             " <C-Y> for Redo is kept in insert mode
-  "iunmap <C-A>|             " <C-A> for Select-All is kept in normal mode
-  "" Key mapping to switch windows quickly (<C-Tab> is already mapped)
-  "nnoremap <C-S-Tab> <C-W>W
-  "inoremap <C-S-Tab> <C-O><C-W>W
-"endif
-
-set formatoptions+=mM
-set fileencodings=ucs-bom,utf-8,default,latin1          " default value
 
 " ---------------------------------------------------------------------------
 " status line
 set laststatus=2
 if has('statusline')
-      " Status line detail: (from Rafael Garcia-Suarez)
-      " %f              file path
-      " %y              file type between braces (if defined)
-      " %([%R%M]%)      read-only, modified and modifiable flags between braces
-      " %{'!'[&ff=='default_file_format']}
-      "                 shows a '!' if the file format is not the platform
-      "                 default
-      " %{'$'[!&list]}  shows a '*' if in list mode
-      " %{'~'[&pm=='']} shows a '~' if in patchmode
-      " (%{synIDattr(synID(line('.'),col('.'),0),'name')})
-      "                 only for debug : display the current syntax item name
-      " %=              right-align following items
-      " #%n             buffer number
-      " %l/%L,%c%V      line number, total number of lines, and column number
-
-      function! SetStatusLineStyle()
-            "let &stl="%f %y "                       .
-            "\"%([%R%M]%)"                   .
-            "\"%#StatusLineNC#%{&ff=='unix'?'':&ff.'\ format'}%*" .
-            "\"%{'$'[!&list]}"               .
-            "\"%{'~'[&pm=='']}"              .
-            "\"%="                           .
-            "\"#%n %l/%L,%c%V "              .
-            "\""
-            "      \"%#StatusLineNC#%{GitBranchInfoString()}%* " .
-            let &stl="%F%m%r%h%w\ [%{&ff}]\ [%Y]\ %P\ %=[a=\%03.3b]\ [h=\%02.2B]\ [%l,%v]"
-      endfunc
-      " Not using it at the moment, using a different one
-      call SetStatusLineStyle()
-
+      let g:Powerline_symbols = 'fancy'
       if has('title')
             set titlestring=%t%(\ [%R%M]%)
       endif
-
-      "highlight StatusLine    ctermfg=White ctermbg=DarkBlue cterm=bold
-      "highlight StatusLineNC  ctermfg=White ctermbg=DarkBlue cterm=NONE
 endif
-
-"set statusline=%{GitBranch()}%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 
 " Personal setting for working with Windows NT/2000/XP (requires tee in path)
 if &shell =~? 'cmd'
@@ -315,30 +509,6 @@ function! ParagraphToLine()
   normal `a
 endfunction
 
-" Non-GUI setting
-if !has('gui_running')
-  " English messages only
-  " language messages en
-
-  " Do not increase the windows width in taglist
-  let Tlist_Inc_Winwidth=0
-
-  " Set text-mode menu
-  if has('wildmenu')
-    set wildmenu
-    set cpoptions-=<
-    set wildcharm=<C-Z>
-    nmap <F10>      :emenu <C-Z>
-    imap <F10> <C-O>:emenu <C-Z>
-  endif
-
-  " Change encoding according to the current console code page
-  if &termencoding != '' && &termencoding != &encoding
-    let &encoding=&termencoding
-    let &fileencodings='ucs-bom,utf-8,' . &encoding
-  endif
-endif
-
 " Key mapping to toggle spelling check
 if has('syntax')
   nmap <silent> <F7>      :setlocal spell!<CR>
@@ -349,137 +519,6 @@ if has('syntax')
   endif
 endif
 
-if has('autocmd')
-  function! GnuIndent()
-    setlocal cinoptions=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+2,(0,u0,w1,m1
-    setlocal shiftwidth=2
-    setlocal tabstop=8
-  endfunction
-
-  function! UpdateLastChangeTime()
-    let last_change_anchor='\(" Last Change:\s\+\)\d\{4}-\d\{2}-\d\{2} \d\{2}:\d\{2}:\d\{2}'
-    let last_change_line=search('\%^\_.\{-}\(^\zs' . last_change_anchor . '\)', 'n')
-    if last_change_line != 0
-      let last_change_time=strftime('%Y-%m-%d %H:%M:%S', localtime())
-      let last_change_text=substitute(getline(last_change_line), '^' . last_change_anchor, '\1', '') . last_change_time
-      call setline(last_change_line, last_change_text)
-    endif
-  endfunction
-
-  function! RemoveTrailingSpace()
-    if $VIM_HATE_SPACE_ERRORS != '0' &&
-          \(&filetype == 'c' || &filetype == 'cpp' || &filetype == 'vim')
-      normal m`
-      silent! :%s/\s\+$//e
-      normal ``
-    endif
-  endfunction
-
-  " Set default file encoding(s) to the legacy encoding
-  exec 'set fileencoding=' . legacy_encoding
-  let &fileencodings=substitute(
-                    \&fileencodings, '\<default\>', legacy_encoding, '')
-
-  " Use the legacy encoding for CVS in cvsmenu (Vim script #1245)
-  let CVScmdencoding=legacy_encoding
-  " but the encoding of files in CVS is still UTF-8
-  let CVSfileencoding='utf-8'
-
-  " File patterns for automatic encoding detection (Vim script #1708)
-  let $FENCVIEW_TELLENC='tellenc'       " See <URL:http://wyw.dcweb.cn/>
-  let fencview_auto_patterns='*.txt,*.tex,*.htm{l\=},*.asp'
-  let fencview_html_filetypes='html,aspvbs'
-
-  " File types to use function echoing (Vim script #1735)
-  let EchoFuncTagsLanguages=['c', 'cpp']
-
-  " Do not use menu for NERD Commenter
-  let NERDMenuMode=0
-
-  " Highlight space errors in C/C++ source files (Vim tip #935)
-  if $VIM_HATE_SPACE_ERRORS != '0'
-    let c_space_errors=1
-  endif
-
-  " Tune for C highlighting
-  let c_gnu=1
-  let c_no_curly_error=1
-
-  " Load doxygen syntax file for c/cpp/idl files
-  let load_doxygen_syntax=1
-
-  " Use Bitstream Vera Sans Mono as special code font in doxygen, which
-  " is available at
-  " <URL:http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/>
-  " let doxygen_use_bitsream_vera=1
-
-  " Show syntax highlighting attributes of character under cursor (Vim
-  " script #383)
-  map <Leader>a :call SyntaxAttr()<CR>
-
-  " Automatically find scripts in the autoload directory
-  au FuncUndefined Syn* exec 'runtime autoload/' . expand('<afile>') . '.vim'
-
-  " File type related autosetting
-  au FileType c,cpp      setlocal cinoptions=:0,g0,(0,w1 shiftwidth=4 tabstop=4
-  au FileType diff       setlocal shiftwidth=4 tabstop=4
-  au FileType changelog  setlocal textwidth=76
-  au FileType cvs        setlocal textwidth=72
-  au FileType html,xhtml setlocal indentexpr=
-  au FileType mail       setlocal expandtab softtabstop=2 textwidth=70
-  au FileType python     set tabstop=4|set shiftwidth=4|set expandtab
-  au FileType php        source ~/.vim/myconf/yunt-php.vim
-
-  " Detect file encoding based on file type
-  au BufReadPre  *.gb               call SetFileEncodings('cp936')
-  au BufReadPre  *.big5             call SetFileEncodings('cp950')
-  au BufReadPre  *.nfo              call SetFileEncodings('cp437')
-  au BufReadPost *.gb,*.big5,*.nfo  call RestoreFileEncodings()
-
-  " Quickly exiting help files
-  au BufRead *.txt      if &buftype=='help'|nmap <buffer> q <C-W>c|endif
-
-  " Setting for files following the GNU coding standard
-  "au BufEnter D:/WuYongwei/cvssrc/socket++/*  call GnuIndent()
-  "au BufEnter D:/mingw*             call GnuIndent()
-
-  " Automatically update change time
-  au BufWritePre *vimrc,*.vim       call UpdateLastChangeTime()
-
-  " Remove trailing spaces for C/C++ and Vim files
-  au BufWritePre *                  call RemoveTrailingSpace()
-
-" looks for DokuWiki headlines in the first 20 lines
-" of the current buffer
-  fun IsDokuWiki()
-    if match(getline(1,20),'^ \=\(=\{2,6}\).\+\1 *$') >= 0
-      set textwidth=0
-      set wrap
-      set linebreak
-      set filetype=dokuwiki
-    endif
-  endfun
-" check for dokuwiki syntax
-  autocmd BufWinEnter *.txt call IsDokuWiki()
-" user name with which you want to login at the remote wiki
-let g:DokuVimKi_USER = 'yunt'
-
-" password
-let g:DokuVimKi_PASS = ''
-
-" url of the remote wiki (without trailing '/')
-let g:DokuVimKi_URL  = 'http://wiki.lazyhack.net'
-
-" set to yes if you want to be connected to your remote wiki every time you start vim
-let g:DokuVimKi_AUTOCONNECT = 'no'
-
-" the width of the page tree window (default=35)
-let g:DokuVimKi_TREEWIDTH = '40'
-
-" the width of the fold column of the page tree window (default=3) see :help foldcolumn for further information
-let g:DokuVimKi_FOLDCOLWIDTH = '10'
-
-endif
 map <F2> :w<CR>:call CleanupBuffer(1)<CR>:noh<CR>
 function! CleanupBuffer(keep)
     " Skip binary files
@@ -561,7 +600,7 @@ endfunction
 
             " Map <CTRL>-P to check the file for syntax
             :noremap <C-P> :call PHPsynCHK()<CR>
-            call TSkeletonMapGoToNextTag()
+            "call TSkeletonMapGoToNextTag()
             "AutoComplPopDisable
         endfunction
         autocmd FileType php :call SetPHP()
@@ -585,3 +624,4 @@ endfunction
         "let g:AutoComplPop_NotEnableAtStartup = 1
         "----------------------------------------------------------------------------------}}}
     "----------------------------------------------------------------------------------}}}
+syntax on

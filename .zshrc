@@ -1,15 +1,24 @@
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.zsh
+
+# Set to the name theme to load.
+# Look in ~/.oh-my-zsh/temes/
+ZSH_THEME="agnoster"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
 #命令提示符 {{{
-case "$TERM" in
-        linux)
-                RPROMPT=$(echo '%{\033[31m%}%D %T%{\033[m%}')
-                PROMPT=$(echo '%{\033[34m%}%M%{\033[32m%}%/
-                        %{\033[36m%}%n%{\033[01;33m%} >>> %{\033[m%}')
-                ;;
-        screen*|rxvt*|xterm*|sun)
-                . ~/.zshprompt
-                setprompt
-                ;;
-esac
+#case "$TERM" in
+        #linux)
+                #RPROMPT=$(echo '%{\033[31m%}%D %T%{\033[m%}')
+                #PROMPT=$(echo '%{\033[34m%}%M%{\033[32m%}%/
+                        #%{\033[36m%}%n%{\033[01;33m%} >>> %{\033[m%}')
+                #;;
+        #screen*|rxvt*|xterm*|sun)
+                #. ~/.zshprompt
+                #setprompt
+                #;;
+#esac
 #}}}
 
 #关于历史纪录的配置 {{{
@@ -40,6 +49,7 @@ export PSPDEV="/usr/local/pspdev"
 export PSPSDK="$PSPDEV/psp/sdk"
 export PATH="$PATH:$PSPDEV/bin:$PSPSDK/bin"
 export EDITOR=vi
+export FLASH_ALSA_DEVICE=plug:dmix
 ## Unicode Locale
 #export LANG=de_DE.UTF-8
 #export LC_ALL=de_DE.UTF-8
@@ -92,7 +102,7 @@ function top44 { allhistory | awk -F':[ 0-9]*:[0-9]*;' '{ $1="" ; print }' | sed
 #杂项 {{{
 #允许在交互模式中使用注释  例如：
 #cmd #这是注释
-setopt INTERACTIVE_COMMENTS      
+setopt INTERACTIVE_COMMENTS
       
 #启用自动 cd，输入目录名回车进入目录
 #稍微有点混乱，不如 cd 补全实用
@@ -208,6 +218,9 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias ls='ls -F --color=auto'
 alias ll='ls -l'
+alias la='ls -a'
+alias rscp="rsync -ahP"
+alias rsmv="rsync -ahP --remove-source-files"
 alias grep='grep --color=auto'
 alias ee='emacsclient -t'
 #alias wine='env LANG=zh_CN.UTF-8 wine'
@@ -215,7 +228,8 @@ alias ntp='sudo ntpdate pool.ntp.org && sudo hwclock --systohc'
 alias gae='/opt/google-appengine/appcfg.py'
 alias gaetest='/opt/google-appengine/dev_appserver.py'
 alias winxp-snap='VBoxManage snapshot winxp restore xp-snap'
-alias winxp='sudo modprobe vboxnetflt && VBoxSDL --startvm winxp --nofstoggle --noresize --evdevkeymap && sudo rmmod vboxnetflt vboxdrv'
+#alias winxp='sudo modprobe vboxnetflt && VBoxSDL --startvm winxp --nofstoggle --noresize --evdevkeymap && sudo rmmod vboxnetflt vboxdrv'
+alias winxp='VBoxSDL --startvm winxp --nofstoggle --noresize --evdevkeymap'
 alias vless='vim -u /usr/share/vim/vim72/macros/less.vim'
 alias emacs='env LC_CTYPE=zh_CN.UTF-8 emacs'
 
@@ -342,5 +356,41 @@ function preexec {
     fi
 }
 #}}}
+
+# Less Colors for Man Pages
+export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
+export LESS_TERMCAP_md=$'\E[01;38;5;74m'  # begin bold
+export LESS_TERMCAP_me=$'\E[0m'           # end mode
+export LESS_TERMCAP_se=$'\E[0m'           # end standout-mode
+export LESS_TERMCAP_so=$'\E[38;5;246m'    # begin standout-mode - info box
+export LESS_TERMCAP_ue=$'\E[0m'           # end underline
+export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
+ 
+# For wine
+function prefix() {
+      if [ -z "$1" ]; then 
+            WINEPREFIX="$HOME/.wine/"
+      else
+            WINEPREFIX="$HOME/.local/share/wineprefixes/$1"
+      fi
+      export WINEPREFIX
+}
+
+function goc() {
+      cd "$WINEPREFIX/drive_c"
+}
+
+function lsp() {
+      ls $* "$HOME/.local/share/wineprefixes"
+}
+
+function run() {
+      prefix "$1"
+      goc
+      wine cmd /c "run-$1.bat"
+}
+
+#complete -W "$(lsp)" prefix run
+
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4
