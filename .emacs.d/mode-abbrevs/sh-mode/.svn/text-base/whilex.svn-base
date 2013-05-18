@@ -1,3 +1,0 @@
-while <field "["> <field "expression"> <field "]">; do
-    <endpoint>
-done

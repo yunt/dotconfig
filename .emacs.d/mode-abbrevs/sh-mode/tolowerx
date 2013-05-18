@@ -1,5 +1,0 @@
-# $@: ´ý×ª»»µÄ×Ö·û´®
-function tolower()
-{
-    echo "$@" | tr '[A-Z]' '[a-z]'
-}

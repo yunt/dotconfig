@@ -1,4 +1,0 @@
-(defun <field "funcname"> (<field "args">)
-  "<field "doc">"
-  (interactive)
-  <endpoint>)

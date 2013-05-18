@@ -1,2 +1,0 @@
-PROGRAM_NAME=`basename "$0"`
-<endpoint>

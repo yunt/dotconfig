@@ -1,4 +1,0 @@
-(defun <field "funname"> (<field "">)
-  "<field "doc">"
-  (interactive<field "">)
-  <endpoint>)
